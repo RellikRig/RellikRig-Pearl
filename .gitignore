@@ -1,0 +1,18 @@
+# Public repository contains documentation only. Binaries are release assets.
+*.tar.gz
+*.zip
+*.so
+*.cubin
+*.fatbin
+*.py
+*.pyc
+*.rs
+*.cu
+*.c
+*.h
+*.cpp
+*.hpp
+*.ptx
+*.jsonl
+work/
+outputs/

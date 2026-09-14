@@ -1,0 +1,41 @@
+{
+  "release": "0.1.2",
+  "tested_at": "2026-09-14T23:41:19.230902+00:00",
+  "shared_source_cpu_tests_passed": 16,
+  "binary_only": true,
+  "compiler": "Nuitka 4.2.1 / CPython 3.12.14",
+  "fee_percent": 1,
+  "fee_seconds": 18,
+  "period_seconds": 1800,
+  "limitations": [
+    "Only RTX 5080 Linux tested.",
+    "Fee routing verified with simulated customer/developer sessions; pool smoke test uses developer-owned wallet, so same-wallet allocation applies.",
+    "GPU machine code unchanged; controller compiled to native code with bundled runtime. Tests on one RTX 5080 do not establish other-platform support."
+  ],
+  "customer_wallet_required": true,
+  "public_fee_disable_option": false,
+  "implementation_source_files": 0,
+  "gpu_selftest": [
+    {
+      "event": "selftest",
+      "passed": true,
+      "verification": "official V3 CPU Merkle, noise, jackpot and exact target",
+      "time": "2026-09-14T23:41:21.216928+00:00"
+    }
+  ],
+  "pool_test": {
+    "seconds": 120.12489298504079,
+    "accepted": 2,
+    "rejected": 0,
+    "stale_dropped": 0,
+    "mean_ths": 239.2718374732103,
+    "worker": "RellikRig-Pearl012-Release",
+    "acceptance_evidence": "Pool JSON-RPC result=true, error=null"
+  },
+  "files": {
+    "rellikrig": "36668077445c336cef79a6110f9ebb395f3f0dd5d9b5c669a24e431ce0437cf4",
+    "rellikrig-engine": "f8231b1fed4e71de83971d39a3e659465313f50fc121fa93d435f7f053d05314",
+    "kernels/rellik_native_sm120.cubin": "323c935fed57ab8a8d7d7fe965ae43cb86006eefa5426932d8e26c20b496e8d2"
+  },
+  "status": "passed"
+}

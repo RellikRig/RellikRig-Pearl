@@ -1,0 +1,16 @@
+RellikRig Pearl binary distribution
+Copyright (c) 2026 Rellik. All rights reserved for RellikRig-owned components.
+
+Permission is granted to run the unmodified RellikRig Pearl binary for mining and
+redistribute the complete, unmodified release archive with all notices retained.
+The public binary includes the disclosed 1% developer allocation. No license to
+RellikRig-owned implementation source is granted by this distribution.
+
+These terms apply only to RellikRig-owned components and do not restrict rights
+granted by the separate licenses of third-party components. Third-party notices
+are in THIRD_PARTY.md and licenses/. This notice does not revoke rights previously
+granted under licenses accompanying earlier versions.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM
+EXTENT PERMITTED BY APPLICABLE LAW, THE AUTHORS SHALL NOT BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY ARISING FROM USE OF THE SOFTWARE.
