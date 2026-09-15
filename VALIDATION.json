@@ -1,39 +1,132 @@
 {
-  "release": "0.1.2",
-  "tested_at": "2026-09-14T23:41:19.230902+00:00",
-  "shared_source_cpu_tests_passed": 16,
+  "release": "0.1.3",
+  "tested_at": "2026-09-15T17:53:20.794803+00:00",
   "binary_only": true,
   "compiler": "Nuitka 4.2.1 / CPython 3.12.14",
+  "cpu_tests_passed": 23,
   "fee_percent": 1,
   "fee_seconds": 18,
   "period_seconds": 1800,
   "limitations": [
-    "Only RTX 5080 Linux tested.",
-    "Fee routing verified with simulated customer/developer sessions; pool smoke test uses developer-owned wallet, so same-wallet allocation applies.",
-    "GPU machine code unchanged; controller compiled to native code with bundled runtime. Tests on one RTX 5080 do not establish other-platform support."
+    "Only one tuned RTX 5080 on Linux tested; not a long-term stability guarantee.",
+    "Fee routing covered by simulated sessions; live tests use the developer-owned wallet.",
+    "Compression reductions measure proof/JSON submission payloads, excluding TLS/TCP overhead and other messages."
   ],
   "customer_wallet_required": true,
   "public_fee_disable_option": false,
+  "invalid_difficulty_rejected": true,
   "implementation_source_files": 0,
   "gpu_selftest": [
     {
       "event": "selftest",
       "passed": true,
       "verification": "official V3 CPU Merkle, noise, jackpot and exact target",
-      "time": "2026-09-14T23:41:21.216928+00:00"
+      "time": "2026-09-15T17:53:22.899291+00:00"
     }
   ],
-  "pool_test": {
-    "seconds": 120.12489298504079,
-    "accepted": 2,
-    "rejected": 0,
-    "stale_dropped": 0,
-    "mean_ths": 239.2718374732103,
-    "worker": "RellikRig-Pearl012-Release",
-    "acceptance_evidence": "Pool JSON-RPC result=true, error=null"
-  },
+  "pool_tests": [
+    {
+      "worker": "RellikRigGzip013Default",
+      "seconds": 120.12412385595962,
+      "requested_difficulty": null,
+      "gzip_v2": true,
+      "accepted": 5,
+      "rejected": 0,
+      "stale_dropped": 0,
+      "mean_ths": 239.6170848563693,
+      "pool_targets": [
+        "00000000000007ffffffffffffffffffffffffffffffffffffffffffffffffff"
+      ],
+      "proof_raw_bytes": 1676245,
+      "proof_gzip_bytes": 28832,
+      "proof_reduction_percent": 98.27996504090989,
+      "submit_plain_wire_bytes": 2235575,
+      "submit_wire_bytes": 39027,
+      "submit_reduction_percent": 98.25427462733302,
+      "proof_samples": [
+        {
+          "raw_bytes": 335249,
+          "gzip_bytes": 5753,
+          "raw_sha256": "c43e172ca89795cb8e6ae7f212951e14888fda580742b596ec391934221c59d9",
+          "repeated_0x40_percent": 97.74674943101992,
+          "exact_round_trip": true
+        },
+        {
+          "raw_bytes": 335249,
+          "gzip_bytes": 5758,
+          "raw_sha256": "976ef661423f8595ebdf7328dce714c102db4203536eef5cb394fe978193bf0b",
+          "repeated_0x40_percent": 97.74645114526814,
+          "exact_round_trip": true
+        },
+        {
+          "raw_bytes": 335249,
+          "gzip_bytes": 5752,
+          "raw_sha256": "751aca7ff82ab34b646b0c6bdd66c9581a188948a2205b102aed49d204c0fa7e",
+          "repeated_0x40_percent": 97.74764428827528,
+          "exact_round_trip": true
+        },
+        {
+          "raw_bytes": 335249,
+          "gzip_bytes": 5751,
+          "raw_sha256": "471f4808a5935b8bde7f1192d161afab4011751666410a9af7ee9dc801b6e0fe",
+          "repeated_0x40_percent": 97.74704771677172,
+          "exact_round_trip": true
+        },
+        {
+          "raw_bytes": 335249,
+          "gzip_bytes": 5818,
+          "raw_sha256": "fc974113d4460eaf1a092fee219073bde0bac9ab80965fd702b734d0a03d3189",
+          "repeated_0x40_percent": 97.74645114526814,
+          "exact_round_trip": true
+        }
+      ]
+    },
+    {
+      "worker": "RellikRigGzip013Diff4M",
+      "seconds": 300.11270386900287,
+      "requested_difficulty": 4194304,
+      "gzip_v2": true,
+      "accepted": 3,
+      "rejected": 0,
+      "stale_dropped": 0,
+      "mean_ths": 239.05107596863184,
+      "pool_targets": [
+        "00000000000003ffffffffffffffffffffffffffffffffffffffffffffffffff"
+      ],
+      "proof_raw_bytes": 1005747,
+      "proof_gzip_bytes": 17327,
+      "proof_reduction_percent": 98.27720092627669,
+      "submit_plain_wire_bytes": 1341344,
+      "submit_wire_bytes": 23448,
+      "submit_reduction_percent": 98.25190256936327,
+      "proof_samples": [
+        {
+          "raw_bytes": 335249,
+          "gzip_bytes": 5817,
+          "raw_sha256": "20e1a20f76c0af7ff6e6ad031ee5a017ab87b8123f0c8c04484f3a66a1d54281",
+          "repeated_0x40_percent": 97.74585457376457,
+          "exact_round_trip": true
+        },
+        {
+          "raw_bytes": 335249,
+          "gzip_bytes": 5754,
+          "raw_sha256": "58ba2fffa6870d723419fa30cf81fe9e8b84e0d6ce6e94c9e987fec129e3aa38",
+          "repeated_0x40_percent": 97.74674943101992,
+          "exact_round_trip": true
+        },
+        {
+          "raw_bytes": 335249,
+          "gzip_bytes": 5756,
+          "raw_sha256": "71f605d542a75c0a74a02d75106e60ac80ce8e77f6756870dc97e74dd10d52ff",
+          "repeated_0x40_percent": 97.74436314500565,
+          "exact_round_trip": true
+        }
+      ]
+    }
+  ],
+  "custom_target_ratio": 2.0,
   "files": {
-    "rellikrig": "36668077445c336cef79a6110f9ebb395f3f0dd5d9b5c669a24e431ce0437cf4",
+    "rellikrig": "e89fd74321db30d6f5a83f43b468afd01b7e3daf23c0bc0a2a673e18e2876025",
     "rellikrig-engine": "f8231b1fed4e71de83971d39a3e659465313f50fc121fa93d435f7f053d05314",
     "kernels/rellik_native_sm120.cubin": "323c935fed57ab8a8d7d7fe965ae43cb86006eefa5426932d8e26c20b496e8d2"
   },

@@ -1,4 +1,4 @@
-# RellikRig Pearl 0.1.2
+# RellikRig Pearl 0.1.3
 
 **Pearl V3 rank-128 mining for Linux and NVIDIA RTX 5080.**
 Closed-source binary distribution with a clearly disclosed **1% developer fee**.
@@ -13,8 +13,8 @@ documentation only; use the named Linux miner asset.
 
 ```bash
 sha256sum -c SHA256SUMS
-tar -xzf RellikRig-Pearl-0.1.2-linux-x86_64-sm120.tar.gz
-cd RellikRig-Pearl-0.1.2-linux-x86_64-sm120
+tar -xzf RellikRig-Pearl-0.1.3-linux-x86_64-sm120.tar.gz
+cd RellikRig-Pearl-0.1.3-linux-x86_64-sm120
 ./rellikrig doctor
 ./rellikrig mine --wallet YOUR_PEARL_WALLET --worker MyRig
 ```
@@ -39,6 +39,34 @@ Press Ctrl+C to stop. Run `./rellikrig --help` for options.
 The miner does not change clock, voltage, power or fan settings. Extracting it
 installs no startup service. This is an experimental release with testing on
 one tuned RTX 5080, not a guarantee of performance on other systems.
+
+## GZIP v2 and custom difficulty
+
+The miner requests `type: "v2"` during authorization and requires the pool to
+confirm `type: "v2"` before starting the engine. Each submitted proof is the
+base64 encoding of an RFC 1952 gzip member (equivalent to zlib `wbits=31`).
+Proofs are compressed byte-for-byte after CPU verification.
+
+The native kernel generates repetitive raw matrices before computing their
+commitments: a 320-byte seed/nonce prefix using values 63/64, followed by a
+tail filled with byte value 64 (`0x40`). This makes proofs compressible without modifying
+verified proof data or removing the nonce. Commitment hashes remain intact.
+
+Per-share logs record raw/gzip proof sizes and equivalent uncompressed/compressed
+JSON submission sizes. The API exposes `gzip_v2`, `requested_difficulty`,
+`pool_target`, and cumulative `compression` counters. The reduction measures
+share submission payloads, excluding TLS/TCP overhead and other pool messages.
+
+To request a custom pool difficulty:
+
+```bash
+./rellikrig mine --wallet YOUR_PEARL_WALLET --worker MyRig --difficulty 4194304
+```
+
+Kryptex receives `d=4194304` in the authorization password. The pool's job target
+remains authoritative; this option does not alter the target locally. Omit it
+for pool defaults. `--password d=4194304` also works; do not combine the two
+options. Difficulty is expressed in pool difficulty units, not TH/s.
 
 ## Developer fee: 1%
 
@@ -69,12 +97,20 @@ CA bundle. Certificate verification remains enabled.
 
 ## Validation
 
-See `VALIDATION.json` for checks and the pool smoke-test results for these exact
-binaries. The GPU kernel is unchanged from the previously validated native build.
-Its prior independent 256-hash and production CPU proof checks passed.
-This 0.1.2 package averaged 239.27 TH/s in a two-minute test with
-2 accepted shares, no rejects and no stale drops; this is a short measurement,
-not a long-term stability guarantee or a universal best-miner claim.
+See `VALIDATION.json` for checks and live pool results for these exact binaries.
+The native GPU engine and kernels are unchanged from 0.1.2. This release adds
+explicit GZIP v2 negotiation checks, measured compression telemetry, and the
+custom-difficulty option. The pool tests verify negotiated v2, compression
+round trips, accepted shares, and job targets at default/custom difficulty.
+Tests on one tuned RTX 5080 do not establish performance on other hardware
+or guarantee long-term stability.
+
+| Pool difficulty | Duration | Mean TH/s | Accepted | Rejected | Proof reduction | JSON submission reduction |
+| --- | --- | --- | --- | --- | --- | --- |
+| Default (2097152) | 120.1s | 239.62 | 5 | 0 | 98.28% | 98.25% |
+| 4194304 | 300.1s | 239.05 | 3 | 0 | 98.28% | 98.25% |
+
+Compression figures exclude TLS/TCP overhead and other pool messages.
 
 To run the included GPU/CPU proof test, stop mining first:
 

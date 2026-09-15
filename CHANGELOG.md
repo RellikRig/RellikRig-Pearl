@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.3
+
+- Require explicit GZIP v2 pool confirmation before starting GPU work.
+- Record proof compression and JSON submission size reductions in logs/API.
+- Add --difficulty with pool password d=VALUE and conflict validation.
+- Retain repetitive matrix generation and the validated native GPU kernel.
+- Add protocol, compression, negotiation, and difficulty regression tests.
+
 ## 0.1.2
 
 - Binary-only Pearl release: compiled controller, fee logic and stats API.
