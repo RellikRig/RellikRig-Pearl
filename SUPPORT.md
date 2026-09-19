@@ -1,10 +1,11 @@
 # Support
 
-Use this repository's Issues tab for miner problems and compatibility reports.
-Include the RellikRig version, GPU model, driver version, Linux distribution,
-pool host/port, and a small relevant log excerpt. Remove credentials and any
-unrelated personal information. State whether the issue is reproducible after
-stopping other GPU compute workloads.
+Use this repository's Issues tab. Include miner version, OS, GPU/driver, pool,
+and relevant sanitized log lines. Never include passwords or private keys.
 
-Only the listed RTX 5080 Linux configuration has been validated. Requests for
-other GPUs and operating systems are welcome but do not imply current support.
+Both platforms retain http://127.0.0.1:4067/summary and detailed JSON mining logs.
+Windows: Diagnostics.bat and Run-Self-Test.bat save diagnostic output.
+Linux: ./rellikrig doctor and ./rellikrig selftest provide equivalent checks.
+
+See README.md and platform validation files for exact test coverage.
+Only RTX 5080 has been tested. Report other configurations as unvalidated.

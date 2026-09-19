@@ -3,7 +3,7 @@ Copyright (c) 2026 Rellik. All rights reserved for RellikRig-owned components.
 
 Permission is granted to run the unmodified RellikRig Pearl binary for mining and
 redistribute the complete, unmodified release archive with all notices retained.
-The public binary includes the disclosed 1% developer allocation. No license to
+Windows 0.1.4 includes a disclosed 2% developer allocation; Linux 0.1.4 retains 1%. No license to
 RellikRig-owned implementation source is granted by this distribution.
 
 These terms apply only to RellikRig-owned components and do not restrict rights
