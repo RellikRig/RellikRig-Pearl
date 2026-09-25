@@ -109,3 +109,4 @@ No GPU clocks, voltage, power limit, or fan setting is changed by RellikRig.
 The native Windows 0.2.0 Beta test started a connected RTX 5080 mining session around 238 TH/s, recorded accepted shares with zero rejected shares, detected CUDA 13.4, and kept all output in the embedded console with no Command Prompt window. This is beta software: verify behavior and stability on your own system and share diagnostics for any issue.
 
 See [CHANGELOG.md](CHANGELOG.md), [SECURITY.md](SECURITY.md), [THIRD_PARTY.md](THIRD_PARTY.md), [LICENSES/LGPL-3.0.txt](LICENSES/LGPL-3.0.txt), and [LICENSE.txt](LICENSE.txt) for release details.
+
