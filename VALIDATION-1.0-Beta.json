@@ -1,0 +1,17 @@
+{
+  "version": "1.0 Beta",
+  "policy_and_gui_tests": {
+    "Linux": 10,
+    "Windows_Wine": 10
+  },
+  "windows_frozen_gui_smoke": "passed",
+  "native_Windows_GPU_mining": "awaiting user test",
+  "live_Linux_pool_test": {
+    "pool": "pearl.rellik.dev:3333",
+    "accepted": 23,
+    "rejected": 0,
+    "native_miner_fee_percent": 0
+  },
+  "source_published": false,
+  "PeakMiner_binary_bundled": false
+}

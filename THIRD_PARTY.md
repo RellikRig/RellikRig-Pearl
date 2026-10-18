@@ -1,15 +1,23 @@
-# Third-party notices
+# Third-party components
 
-Binary packages retain component-specific notices in licenses/ and THIRD_PARTY.md.
-RellikRig-owned code remains proprietary; upstream licenses retain their rights.
+The closed-source RellikRig application uses separately licensed components.
+Their notices are included under `LICENSES` in each release.
 
-Native mining reference: https://github.com/puneet-mehta/pearl-hashrate-miner
-(MIT OR Apache-2.0). Pearl consensus/proofs:
-https://github.com/pearl-research-labs/pearl (ISC; Plonky2 MIT OR Apache-2.0).
-CUTLASS/CUTE: BSD-3-Clause. Rust dependencies retain their individual notices.
+- Native engine reference: [pearl-hashrate-miner](https://github.com/puneet-mehta/pearl-hashrate-miner), MIT / Apache-2.0.
+- Consensus and proof dependencies: [Pearl](https://github.com/pearl-research-labs/pearl), ISC; Plonky2, MIT / Apache-2.0.
+- CUTLASS/CuTe headers: NVIDIA BSD-3-Clause.
+- Qt/PySide6 6.8.3 and Shiboken6: LGPL-3.0 (applicable bundled modules), with third-party notices under their own terms. Qt is dynamically linked and replaceable in `_internal`.
+- CPython: Python Software Foundation license, including its bundled dependency notices.
+- psutil: BSD-3-Clause.
+- Inter fonts: SIL Open Font License 1.1.
+- PyInstaller bootloader: GPL with its exception for frozen applications. Build tools are not application source.
+- Rust dependencies: see the bundled crate inventory and individual notices.
 
-Both packages include compiled Nuitka controllers and CPython runtimes plus
-required runtime libraries. Linux and Windows runtime inventories differ;
-consult the package notices for exact contents. Windows includes MinGW runtime
-notices and the GCC runtime exception. No compiler, NVIDIA driver or CUDA Toolkit
-is distributed. No Peakminer code is used.
+Corresponding Qt 6.8.3 and Qt for Python/PySide/Shiboken 6.8.3 source can be
+obtained from [Qt’s official source archives](https://download.qt.io/official_releases/qt/6.8/6.8.3/submodules/)
+and [Qt for Python source](https://download.qt.io/official_releases/QtForPython/pyside6/PySide6-6.8.3-src/).
+The bundled libraries are unmodified vendor wheels. You may replace the
+LGPL-covered libraries with compatible builds and debug those modifications.
+
+No NVIDIA driver or CUDA Toolkit is distributed. PeakMiner is installed by the
+user from its official distribution; no PeakMiner source or binary is included.

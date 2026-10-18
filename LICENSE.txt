@@ -1,16 +1,19 @@
-RellikRig Pearl binary distribution
-Copyright (c) 2026 Rellik. All rights reserved for RellikRig-owned components.
+RellikRig v1.0 Beta
+Copyright (c) 2026 RellikRig. All rights reserved.
 
-Permission is granted to run the unmodified RellikRig Pearl binary for mining and
-redistribute the complete, unmodified release archive with all notices retained.
-Windows 0.1.4 includes a disclosed 2% developer allocation; Linux 0.1.4 retains 1%. No license to
-RellikRig-owned implementation source is granted by this distribution.
+Permission is granted to download and use the official compiled RellikRig
+application for personal or commercial mining, subject to its disclosed
+developer allocation. RellikRig's application implementation is proprietary
+and is not offered under an open-source license. No license to redistribute,
+sell, sublicense, or modify the proprietary application is granted.
 
-These terms apply only to RellikRig-owned components and do not restrict rights
-granted by the separate licenses of third-party components. Third-party notices
-are in THIRD_PARTY.md and licenses/. This notice does not revoke rights previously
-granted under licenses accompanying earlier versions.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE AUTHORS ARE NOT
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM ITS USE.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM
-EXTENT PERMITTED BY APPLICABLE LAW, THE AUTHORS SHALL NOT BE LIABLE FOR ANY CLAIM,
-DAMAGES OR OTHER LIABILITY ARISING FROM USE OF THE SOFTWARE.
+Third-party components remain subject to their respective licenses and notices.
+Nothing here restricts rights granted by those licenses, including replacing,
+modifying or debugging LGPL-covered Qt/PySide libraries. The application is
+distributed with dynamically linked Qt libraries and their source-access notes.
+PeakMiner is not included; its separate license applies when it is selected.

@@ -1,111 +1,102 @@
-# RellikRig Pearl — 0.2.0 Beta
+# RellikRig · v1.0 Beta
 
+A closed-source Pearl GPU miner and desktop monitor for Windows and Linux, styled to match [Rellik’s Pearl pool](https://pearl.rellik.dev/).
 
+RellikRig includes its native NVIDIA engine, an optional PeakMiner runner, live GPU statistics, an embedded console, and system tray controls. This release is Pearl-only; it contains no Monero or NOID CPU miner.
 
+## Download and run
 
-RellikRig is a graphical NVIDIA Pearl miner for Windows and Linux. Version 0.2.0 Beta is a self-contained desktop app for configuring the pool and wallet, starting or stopping mining, viewing live share and GPU information, using the system tray, and exporting diagnostics.
+Download the platform archive and `SHA256SUMS` from [GitHub Releases](https://github.com/RellikRig/RellikRig-Pearl/releases).
 
+| Platform | Archive | Launch |
+|---|---|---|
+| Windows x64 | `RellikRig-Windows-1.0-Beta.zip` | Extract the whole folder, then open `RellikRig.exe` |
+| Linux x64 | `RellikRig-Linux-1.0-Beta.zip` | Extract the whole folder, then run `./RellikRig` |
 
+Keep `_internal` beside the executable. Python, Rust and the CUDA Toolkit are not required. An installed NVIDIA driver is required. The retained native profile was validated on an RTX 5080 with 16 GB VRAM; other packaged NVIDIA architectures have not received equivalent performance validation. The native RTX 5080 profile needs about 14 GB of available VRAM.
 
-
-The release archives contain one executable, a short launch note, and the LGPL-3.0 notice for the Qt for Python runtime. There is no terminal workflow and no external kernel folder to manage.
-
-
-
-
-## Download
-
-
-
-
-Download the archive for your operating system from [Releases](https://github.com/RellikRig/RellikRig-Pearl/releases), extract it to a writable folder, and run the included executable.
-
-
-
-
-| Platform | Download | Developer allocation |
-| --- | --- | --- |
-| Windows x64 | `RellikRig-Windows-0.2.0-Beta.zip` | Defaults to 2%; configurable from 1% to 100% in Settings |
-| Linux x86-64 | `RellikRig-Linux-0.2.0-Beta.zip` | Defaults to 1%; configurable from 1% to 100% in Settings |
-
-
-
-
-The beta was tested on an NVIDIA GeForce RTX 5080. The dashboard reports the detected GPU, driver, CUDA version, GPU load, temperature, fan, power, clocks, and VRAM. Test other NVIDIA cards carefully and include a diagnostics ZIP with any report.
-
-
-
+The Windows build was cross-compiled and its interface and policy tests were run under Wine. Native Windows GPU mining remains a user-test item for this beta. The Linux native engine and CUDA images are retained from the previously validated build.
 
 ## First run
 
+1. Open **Settings → Miner**.
+2. Enter your public Pearl receiving address and a worker name. The default worker is `RellikRig`; the wallet starts blank.
+3. Select **RellikRig · native engine**, or select PeakMiner and extract its download into the `Peakminer` folder beside RellikRig.
+4. Review the pool, save settings, then click **Start miner** on the dashboard.
 
+The default pool is `stratum+ssl://pearl.rellik.dev:3333`. TLS certificates are verified. Custom share difficulty is optional; leave it blank for the pool’s automatic settings. Alternate pools must support compatible Pearl V3 proof submissions.
 
+## Engines and fees
 
-1. Run `RellikRig.exe` on Windows or `RellikRig` on Linux.
-2. Open **Settings** and review the wallet, worker name, pool address, custom difficulty, and developer allocation.
-3. Click **Save settings**, then use **Start miner** on the Dashboard.
-4. **Show console** and **Hide console** expand or collapse the complete live miner output inside the app; the Dashboard opens in its compact layout.
-5. Closing the window keeps RellikRig in the system tray by default. Right-click the tray icon and select **Exit RellikRig** to stop mining and exit.
+| Selected engine | Destination | RellikRig miner fee |
+|---|---|---:|
+| RellikRig native | `pearl.rellik.dev:3333` over TLS | **0%** |
+| RellikRig native | Any other pool | **2%** |
+| PeakMiner | Any pool | **1%**, additional to PeakMiner’s own developer fee |
 
+Pool fees are separate. The Rellik pool currently charges a 1% pool fee on block rewards; a 0% RellikRig miner fee does not remove it. PeakMiner’s own fee is controlled by PeakMiner, not this application. For example, a 2% PeakMiner fee plus the 1% RellikRig allocation leaves approximately 97.02% for user mining before pool fees and restart overhead.
 
+Native 2% allocation uses the final 36 seconds of each 30-minute cycle. The PeakMiner runner targets 18 seconds per 30 minutes of observed active mining, retains its allocation clock across app restarts, and returns to the user wallet afterward. Allocation describes mining time, not a fixed number of shares or guaranteed revenue. Connection and kernel initialization take additional time when switching payees.
 
+Developer work uses the selected pool and the project wallet:
 
-The default settings are intentionally usable without editing:
+`prl1pj3anxnynvpk9faqtmglf79h6g664c0t0ez3zndee4cu9k3aw82qs2gmdwc`
 
+If the user wallet is already the project wallet, the payee is unchanged. Fee policy is automatic, with no percentage input in Settings.
 
+## Native RellikRig engine
 
+The app automatically selects its retained, fastest verified native profile for the detected GPU. On the validated RTX 5080, this is the smaller-A / four-chain-fold kernel. There are no experimental kernel or CPU-engine choices in this release. GPU-generated winners are independently checked on the CPU before submission; ordinary CPU use for proof validation is still necessary.
 
-| Setting | Default |
-| --- | --- |
-| Wallet | `prl1pj3anxnynvpk9faqtmglf79h6g664c0t0ez3zndee4cu9k3aw82qs2gmdwc` |
-| Worker | `RellikRig` |
-| Pool | `prl-us.kryptex.network:8048` |
-| Custom difficulty | `2097152` |
-| Windows developer allocation | `2%` |
-| Linux developer allocation | `1%` |
+RellikRig does not change GPU clocks, voltage, fan speed or power limits. Existing tuning tools remain in control. The native temperature guard stops mining at its configured safety threshold, 83°C by default.
 
+## PeakMiner console and monitoring
 
+Download PeakMiner separately from its [official releases](https://github.com/peakminer/peakminer/releases). Choose **PeakMiner · console & monitor** under **Miner**, and extract the download into the empty `Peakminer` folder beside RellikRig. The app detects its executable automatically, including an extracted subfolder. Keep one version in that folder. **Settings → GPU → Open folder** opens it.
 
+RellikRig launches and stops the selected process, displays its stdout/stderr in **Show console**, and reads its local API for the dashboard. PeakMiner is proprietary and is not bundled or redistributed in these archives. Its own license and developer fee apply.
 
-Change the wallet if you want shares credited to your own Pearl wallet. Leaving the default wallet mines to the project wallet.
+Stop a separately running GPU miner before starting a new session. If an API port is already occupied, select a free port under **Settings → GPU** or stop the other instance. RellikRig does not terminate unrelated miners.
 
+## Dashboard and tray
 
+The dashboard shows hashrate, efficiency, accumulated accepted and rejected shares, GPU load, temperature, fan, power, core clock, and VRAM.
 
+- **Mining Time:** accumulated observed mining time, retained after stopping or exiting.
+- **Session Time:** active mining time since the current Start action; resets on a new session.
+- **Accepted / Rejected · Total:** accumulated counters across app-controlled mining sessions and both GPU engines. These are local observations, including allocation work, not pool payout accounting.
 
-## Dashboard
+Mining time pauses while stopped or disconnected. Totals are saved regularly and on a clean stop; an abrupt power loss can lose observations since the last save.
 
+The native console reports new jobs and accepted/rejected shares immediately, with a telemetry summary approximately once every 60 seconds. The dashboard and local API keep refreshing independently.
 
+**Show console** opens the live output below the dashboard and expands the window within the available screen area. Metric cards and buttons retain their sizes; the dashboard scrolls on smaller screens.
 
+Closing the window keeps mining in the tray when enabled. Right-click the tray icon for Show, Start, Stop, or **Exit RellikRig**. Exit stops the app’s mining processes. Startup at sign-in and mining on launch are optional and disabled by default.
 
-The dashboard reads RellikRig's local API at `127.0.0.1:4067` and NVIDIA's local driver tools. It does not send GUI telemetry to another service. The API remains available for local monitoring tools.
+![Pearl dashboard before mining](docs/dashboard.png)
 
-![Windows dashboard while mining](docs/screenshots/windows-dashboard-running.jpg)
+![Dark Miner settings](docs/settings.png)
 
-The bottom share cards estimate 30-minute, 3-hour, and 24-hour share counts from the current uptime and accepted-share rate. They are estimates, not pool accounting.
+## Local API and saved settings
 
-![Windows compact dashboard](docs/screenshots/windows-dashboard-compact.jpg)
+| Engine | Default local summary |
+|---|---|
+| RellikRig native | `http://127.0.0.1:4067/summary` |
+| PeakMiner | `http://127.0.0.1:4069/summary` |
 
-## Settings, startup, and diagnostics
+The app uses loopback APIs; it does not open firewall ports or expose them to the LAN. No analytics service is used. Your configured pool receives mining traffic, and opening a website link uses your browser.
 
-Settings includes the wallet, worker name, pool address, optional custom share difficulty, Windows developer allocation, login startup, launch mining, and close behavior. RellikRig remembers its window position and keeps a single GUI instance active.
+Settings and logs are stored in the user’s application configuration directory under `RellikRig-1/settings.json`; the exact location follows Qt’s platform configuration path. Mining time and share totals are stored there too. This beta uses its own configuration and does not overwrite an earlier CPU-enabled installation’s settings or stop its CPU services.
 
-![Windows settings](docs/screenshots/windows-settings.jpg)
+## Troubleshooting
 
-**Suggestions are welcomed and encouraged.** If something fails or looks wrong, use **Create diagnostics ZIP** in Settings and attach that ZIP to a GitHub Issue. It includes the application version, GPU/driver information, local API health, and a redacted mining summary so a report can be investigated without asking you to reproduce the problem.
+Use **Settings → Create diagnostics ZIP** to export the version, GPU details, recent console output and local summary. Wallet addresses are redacted in that export. Report issues with OS, driver, GPU model, selected engine, pool, and the error text at [GitHub Issues](https://github.com/RellikRig/RellikRig-Pearl/issues).
 
-Include the operating system, GPU, NVIDIA driver version, pool address, and a short description of what happened. Do not include passwords, private keys, or unrelated personal files. See [SUPPORT.md](SUPPORT.md) for the reporting checklist.
+If native mining cannot find the GPU, check `nvidia-smi` and install the appropriate NVIDIA driver. If a pool rejects authorization, verify the wallet, endpoint and TLS mode. If the app says its API port is occupied, stop the competing instance or choose a different port. If the extracted folder is incomplete, extract it again without separating `_internal` from the executable.
 
-## Pool and fee behavior
+## License and source availability
 
-RellikRig uses the Pearl pool protocol with GZIP v2 proof submissions. The pool target remains authoritative even when custom difficulty is requested. The developer allocation uses the configured pool and resumes normal mining at the end of its scheduled window.
+RellikRig application source is private. This repository contains documentation, screenshots and release downloads only. GitHub’s automatic “Source code” ZIP/TAR archives contain this documentation repository, not the miner implementation.
 
-- Windows: the selected percentage is scheduled across each 1,800-second cycle. The default 2% is 36 seconds; the minimum 1% is 18 seconds.
-- Linux: the selected percentage is scheduled across each 1,800-second cycle. The default 1% is 18 seconds; the maximum 100% is the full cycle.
-
-No GPU clocks, voltage, power limit, or fan setting is changed by RellikRig.
-
-## Beta status
-
-The native Windows 0.2.0 Beta test started a connected RTX 5080 mining session around 238 TH/s, recorded accepted shares with zero rejected shares, detected CUDA 13.4, and kept all output in the embedded console with no Command Prompt window. This is beta software: verify behavior and stability on your own system and share diagnostics for any issue.
-
-See [CHANGELOG.md](CHANGELOG.md), [SECURITY.md](SECURITY.md), [THIRD_PARTY.md](THIRD_PARTY.md), [LICENSES/LGPL-3.0.txt](LICENSES/LGPL-3.0.txt), and [LICENSE.txt](LICENSE.txt) for release details.
+See [LICENSE.txt](LICENSE.txt) for RellikRig’s proprietary license and [THIRD_PARTY.md](THIRD_PARTY.md) plus the bundled `LICENSES` folder for open-source component notices. Those components retain their original licenses, including LGPL rights for Qt/PySide. PeakMiner is a separate product and retains its own terms.
