@@ -1,4 +1,4 @@
-# RellikRig · v1.0 Beta
+# RellikRig · v1.0 Beta 2
 
 A closed-source Pearl GPU miner and desktop monitor for Windows and Linux, styled to match [Rellik’s Pearl pool](https://pearl.rellik.dev/).
 
@@ -10,8 +10,8 @@ Download the platform archive and `SHA256SUMS` from [GitHub Releases](https://gi
 
 | Platform | Archive | Launch |
 |---|---|---|
-| Windows x64 | `RellikRig-Windows-1.0-Beta.zip` | Extract the whole folder, then open `RellikRig.exe` |
-| Linux x64 | `RellikRig-Linux-1.0-Beta.zip` | Extract the whole folder, then run `./RellikRig` |
+| Windows x64 | `RellikRig-Windows-1.0-Beta-2.zip` | Extract the whole folder, then open `RellikRig.exe` |
+| Linux x64 | `RellikRig-Linux-1.0-Beta-2.zip` | Extract the whole folder, then run `./RellikRig` |
 
 Keep `_internal` beside the executable. Python, Rust and the CUDA Toolkit are not required. An installed NVIDIA driver is required. The retained native profile was validated on an RTX 5080 with 16 GB VRAM; other packaged NVIDIA architectures have not received equivalent performance validation. The native RTX 5080 profile needs about 14 GB of available VRAM.
 
@@ -90,6 +90,8 @@ The app uses loopback APIs; it does not open firewall ports or expose them to th
 Settings and logs are stored in the user’s application configuration directory under `RellikRig-1/settings.json`; the exact location follows Qt’s platform configuration path. Mining time and share totals are stored there too. This beta uses its own configuration and does not overwrite an earlier CPU-enabled installation’s settings or stop its CPU services.
 
 ## Troubleshooting
+
+Beta 2 fixes a Windows startup check that incorrectly reported unused API ports as occupied. The native server now attempts the actual bind and reports the operating system error if it cannot open the API.
 
 Use **Settings → Create diagnostics ZIP** to export the version, GPU details, recent console output and local summary. Wallet addresses are redacted in that export. Report issues with OS, driver, GPU model, selected engine, pool, and the error text at [GitHub Issues](https://github.com/RellikRig/RellikRig-Pearl/issues).
 

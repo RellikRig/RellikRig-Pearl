@@ -1,0 +1,24 @@
+{
+  "version": "1.0 Beta 2",
+  "policy_and_gui_tests": {
+    "Linux": 13,
+    "Windows_Wine": 13
+  },
+  "frozen_GUI_smoke": {
+    "Linux": "passed",
+    "Windows_Wine": "passed"
+  },
+  "GUI_Start_QProcess_frozen_API_child": {
+    "Linux": "passed",
+    "Windows_Wine": "passed"
+  },
+  "frozen_API_bind_query_and_conflict": {
+    "Linux": "passed",
+    "Windows_Wine": "passed"
+  },
+  "native_Windows_GPU_mining": "awaiting user test",
+  "native_kernel": "unchanged from Beta 1",
+  "source_published": false,
+  "PeakMiner_binary_bundled": false,
+  "default_pool": "stratum+ssl://pearl.rellik.dev:3333"
+}

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0 Beta 2 · 2026-10-18
+
+- Fixed a Windows startup check that falsely reported unused API ports as occupied.
+- Let the native API server report actual bind failures with the operating system error.
+- Added regression coverage for Windows socket timeouts, GUI start, real API binding and conflicts.
+- Kept the default Rellik TLS pool, fee policy, native CUDA kernels, layout and optional empty Peakminer folder unchanged.
+
 ## 1.0 Beta · 2026-10-18
 
 - Redesigned the Pearl dashboard and dark settings to match pearl.rellik.dev.
