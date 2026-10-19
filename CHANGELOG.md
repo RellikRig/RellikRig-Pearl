@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.5 Beta · 2026-10-19
+
+- Clear stale VRAM, efficiency and unavailable GPU readings on the dashboard.
+- Show Reconnecting instead of a cached mining rate when the pool connection is lost.
+- Recover invalid settings fields without discarding valid preferences and share totals.
+- Match tray Start/Stop availability to the active miner and preserve maximized windows when restoring from the tray.
+
 ## 1.0.4 Beta · 2026-10-19
 
 - Moved PeakMiner executable selection, folder browsing and its note into Miner settings, visible only when PeakMiner is selected.

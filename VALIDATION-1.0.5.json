@@ -1,0 +1,28 @@
+{
+  "version": "1.0.5 Beta",
+  "linux": {
+    "passed": 43,
+    "skipped": 3
+  },
+  "windows_wine": {
+    "passed": 42,
+    "skipped": 4
+  },
+  "native_CUDA_unchanged": true,
+  "native_windows_GPU": "user testing required",
+  "changes": [
+    "monitoring recovery",
+    "settings recovery",
+    "tray control states",
+    "maximized restoration"
+  ],
+  "packaged_GUI_smoke": {
+    "linux": "passed",
+    "windows_Wine": "passed"
+  },
+  "packaged_GUI_to_controller_API": {
+    "linux": "passed",
+    "windows_Wine": "passed"
+  },
+  "unchanged_native_payloads_verified": true
+}
