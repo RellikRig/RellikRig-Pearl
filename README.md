@@ -1,4 +1,4 @@
-# RellikRig · v1.0.3 Beta
+# RellikRig · v1.0.4 Beta
 
 A closed-source Pearl GPU miner and desktop monitor for Windows and Linux, styled to match [Rellik’s Pearl pool](https://pearl.rellik.dev/).
 
@@ -10,8 +10,8 @@ Download the platform archive and `SHA256SUMS` from [GitHub Releases](https://gi
 
 | Platform | Archive | Launch |
 |---|---|---|
-| Windows x64 | `RellikRig-Windows-1.0.3-Beta.zip` | Extract the whole folder, then open `RellikRig.exe` |
-| Linux x64 | `RellikRig-Linux-1.0.3-Beta.zip` | Extract the whole folder, then run `./RellikRig` |
+| Windows x64 | `RellikRig-Windows-1.0.4-Beta.zip` | Extract the whole folder, then open `RellikRig.exe` |
+| Linux x64 | `RellikRig-Linux-1.0.4-Beta.zip` | Extract the whole folder, then run `./RellikRig` |
 
 Keep `_internal` beside the executable. Python, Rust and the CUDA Toolkit are not required. An installed NVIDIA driver is required. The retained native profile was validated on an RTX 5080 with 16 GB VRAM; other packaged NVIDIA architectures have not received equivalent performance validation. The native RTX 5080 profile needs about 14 GB of available VRAM.
 
@@ -66,11 +66,13 @@ RellikRig does not change GPU clocks, voltage, fan speed or power limits. Existi
 
 ## PeakMiner console and monitoring
 
-Download PeakMiner separately from its [official releases](https://github.com/peakminer/peakminer/releases). Choose **PeakMiner · console & monitor** under **Miner**, and extract the download into the empty `Peakminer` folder beside RellikRig. The app detects its executable automatically, including an extracted subfolder. Keep one version in that folder. **Settings → GPU → Open folder** opens it. **Browse…** selects a PeakMiner executable at another location. On Linux, enable the executable permission on the downloaded file before using it.
+Download PeakMiner separately from its [official releases](https://github.com/peakminer/peakminer/releases). Choose **PeakMiner · console & monitor** under **Miner**, and extract the download into the empty `Peakminer` folder beside RellikRig. The app detects its executable automatically, including an extracted subfolder. Keep one version in that folder. **Settings → Miner → Open folder** opens it. **Browse…** selects a PeakMiner executable at another location. On Linux, enable the executable permission on the downloaded file before using it.
 
 RellikRig launches and stops the selected process, displays its stdout/stderr in **Show console**, and reads its local API for the dashboard. PeakMiner is proprietary and is not bundled or redistributed in these archives. Its own license and developer fee apply.
 
-Stop a separately running GPU miner before starting a new session. If an API port is already occupied, select a free port under **Settings → GPU** or stop the other instance. RellikRig does not terminate unrelated miners.
+Stop a separately running GPU miner before starting a new session. If an API port is already occupied, select a free port under **Settings → API** or stop the other instance. RellikRig does not terminate unrelated miners.
+
+![PeakMiner controls under Miner](docs/peakminer-settings.png)
 
 ## Dashboard and tray
 
@@ -95,6 +97,16 @@ Closing the window keeps mining in the tray when enabled. Right-click the tray i
 ![Dark Miner settings](docs/settings.png)
 
 **Pool website** opens the pool in your default browser. **Your pool stats** opens its lookup page and copies the active wallet address; paste it into the lookup field. The system browser and file manager launch with their own libraries, so bundled Qt files do not override KDE’s installed version.
+
+## API and GPU information
+
+Settings is organized into **Miner**, **API**, and **GPU info** tabs. The PeakMiner executable field, **Browse…**, **Open folder**, and download note appear in Miner only when PeakMiner is selected.
+
+**API** contains both engine ports and buttons to open their local summary pages in your browser. For the engine currently mining, the link keeps using its active session port, even if you edit or save a different port for the next start. A summary page responds while its engine is running. **GPU info** shows the detected GPU, NVIDIA driver, VRAM, load, temperature, fan, power and clocks; it refreshes while mining is stopped too.
+
+![API ports and summary links](docs/api-settings.png)
+
+![GPU information](docs/gpu-info.png)
 
 ## Local API and saved settings
 

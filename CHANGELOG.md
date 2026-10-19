@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.4 Beta · 2026-10-19
+
+- Moved PeakMiner executable selection, folder browsing and its note into Miner settings, visible only when PeakMiner is selected.
+- Added an API tab for both engine ports and local summary page links. Running-session links retain the active port until Stop → Start applies saved changes.
+- Added a GPU info tab with model, driver, VRAM, load, temperature, fan, power and clock readings, including while mining is stopped.
+- Reset settings scroll position when switching tabs and clear unavailable GPU readings instead of retaining stale values.
+
 ## 1.0.3 Beta · 2026-10-19
 
 - Added dashboard and tray Pause/Resume controls, preserving active session time, accumulated shares and fee clocks.

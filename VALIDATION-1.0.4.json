@@ -1,0 +1,75 @@
+{
+  "version": "1.0.4 Beta",
+  "regression_tests": {
+    "Linux": {
+      "cases": 42,
+      "passed": 39,
+      "skipped": 3,
+      "failed": 0
+    },
+    "Windows_Wine": {
+      "cases": 42,
+      "passed": 38,
+      "skipped": 4,
+      "failed": 0
+    }
+  },
+  "settings_checks": [
+    "Miner/API/GPU info tabs",
+    "PeakMiner selection and browser visibility",
+    "Running-session API links retain active ports",
+    "GPU information refresh and unavailable values",
+    "Diagnostics GPU information and wallet redaction"
+  ],
+  "frozen_GUI_smoke": {
+    "linux": {
+      "version": "1.0.4 Beta",
+      "window_width": 870,
+      "window_height": 680,
+      "tabs": [
+        "Miner",
+        "API",
+        "GPU info"
+      ],
+      "runtime_controller": true,
+      "console_visible": false,
+      "mining_started": false,
+      "idle_backend": "Wayland",
+      "idle_state_available": true,
+      "system_handler_probe": {
+        "handler": "/usr/bin/kde-open",
+        "returncode": 0,
+        "stderr": ""
+      }
+    },
+    "windows": {
+      "version": "1.0.4 Beta",
+      "window_width": 1090,
+      "window_height": 680,
+      "tabs": [
+        "Miner",
+        "API",
+        "GPU info"
+      ],
+      "runtime_controller": true,
+      "console_visible": false,
+      "mining_started": false,
+      "idle_backend": "Windows",
+      "idle_state_available": true,
+      "system_handler_probe": {
+        "platform": "Windows",
+        "handler": "ShellExecute",
+        "probe": "covered by Windows unit tests"
+      }
+    }
+  },
+  "GUI_Start_QProcess_frozen_API_child": {
+    "Linux": "passed",
+    "Windows_Wine": "passed"
+  },
+  "native_Windows_GPU_mining": "requires user test",
+  "native_kernel": "unchanged from 1.0.3 Beta",
+  "source_published": false,
+  "PeakMiner_binary_bundled": false,
+  "default_pool": "stratum+ssl://pearl.rellik.dev:3333"
+}
