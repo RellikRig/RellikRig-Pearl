@@ -9,6 +9,8 @@ Their notices are included under `LICENSES` in each release.
 - Qt/PySide6 6.8.3 and Shiboken6: LGPL-3.0 (applicable bundled modules), with third-party notices under their own terms. Qt is dynamically linked and replaceable in `_internal`.
 - CPython: Python Software Foundation license, including its bundled dependency notices.
 - psutil: BSD-3-Clause.
+- X11 idle detection: libXss, MIT/X11; see `libXss-COPYING.txt`.
+- Linux idle observer: Wayland ext-idle-notify protocol definitions, MIT; see `Wayland-idle-protocol-LICENSE.txt`. Uses the system libwayland-client.
 - Inter fonts: SIL Open Font License 1.1.
 - PyInstaller bootloader: GPL with its exception for frozen applications. Build tools are not application source.
 - Rust dependencies: see the bundled crate inventory and individual notices.

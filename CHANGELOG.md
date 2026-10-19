@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.3 Beta · 2026-10-19
+
+- Added dashboard and tray Pause/Resume controls, preserving active session time, accumulated shares and fee clocks.
+- Added optional idle-only mining with a configurable delay, pausing on activity and resuming after idle.
+- Added an optional manual-pause resume timer in minutes; Stop cancels automatic resumes.
+- Added Windows, X11 and Wayland idle detection; unavailable idle detection keeps automatic mining paused.
+- Wait for owned miner cleanup before resuming, without blocking the interface on termination.
+
 ## 1.0.2 Beta · 2026-10-19
 
 - Fixed pool website, wallet stats and PeakMiner folder links on Linux by launching the system handler without bundled Qt library/plugin paths.
