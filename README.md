@@ -1,4 +1,4 @@
-# RellikRig · v1.0 Beta 2
+# RellikRig · v1.0.1 Beta
 
 A closed-source Pearl GPU miner and desktop monitor for Windows and Linux, styled to match [Rellik’s Pearl pool](https://pearl.rellik.dev/).
 
@@ -10,8 +10,8 @@ Download the platform archive and `SHA256SUMS` from [GitHub Releases](https://gi
 
 | Platform | Archive | Launch |
 |---|---|---|
-| Windows x64 | `RellikRig-Windows-1.0-Beta-2.zip` | Extract the whole folder, then open `RellikRig.exe` |
-| Linux x64 | `RellikRig-Linux-1.0-Beta-2.zip` | Extract the whole folder, then run `./RellikRig` |
+| Windows x64 | `RellikRig-Windows-1.0.1-Beta.zip` | Extract the whole folder, then open `RellikRig.exe` |
+| Linux x64 | `RellikRig-Linux-1.0.1-Beta.zip` | Extract the whole folder, then run `./RellikRig` |
 
 Keep `_internal` beside the executable. Python, Rust and the CUDA Toolkit are not required. An installed NVIDIA driver is required. The retained native profile was validated on an RTX 5080 with 16 GB VRAM; other packaged NVIDIA architectures have not received equivalent performance validation. The native RTX 5080 profile needs about 14 GB of available VRAM.
 
@@ -25,6 +25,8 @@ The Windows build was cross-compiled and its interface and policy tests were run
 4. Review the pool, save settings, then click **Start miner** on the dashboard.
 
 The default pool is `stratum+ssl://pearl.rellik.dev:3333`. TLS certificates are verified. Custom share difficulty is optional; leave it blank for the pool’s automatic settings. Alternate pools must support compatible Pearl V3 proof submissions.
+
+You can edit and save settings while mining. The confirmation explains that saved mining settings apply on the next miner start; stop and restart the miner to apply them now. The current session keeps its engine, wallet, pool and API settings until then.
 
 ## Engines and fees
 
@@ -52,7 +54,7 @@ RellikRig does not change GPU clocks, voltage, fan speed or power limits. Existi
 
 ## PeakMiner console and monitoring
 
-Download PeakMiner separately from its [official releases](https://github.com/peakminer/peakminer/releases). Choose **PeakMiner · console & monitor** under **Miner**, and extract the download into the empty `Peakminer` folder beside RellikRig. The app detects its executable automatically, including an extracted subfolder. Keep one version in that folder. **Settings → GPU → Open folder** opens it.
+Download PeakMiner separately from its [official releases](https://github.com/peakminer/peakminer/releases). Choose **PeakMiner · console & monitor** under **Miner**, and extract the download into the empty `Peakminer` folder beside RellikRig. The app detects its executable automatically, including an extracted subfolder. Keep one version in that folder. **Settings → GPU → Open folder** opens it. **Browse…** selects a PeakMiner executable at another location. On Linux, enable the executable permission on the downloaded file before using it.
 
 RellikRig launches and stops the selected process, displays its stdout/stderr in **Show console**, and reads its local API for the dashboard. PeakMiner is proprietary and is not bundled or redistributed in these archives. Its own license and developer fee apply.
 
@@ -67,6 +69,8 @@ The dashboard shows hashrate, efficiency, accumulated accepted and rejected shar
 - **Accepted / Rejected · Total:** accumulated counters across app-controlled mining sessions and both GPU engines. These are local observations, including allocation work, not pool payout accounting.
 
 Mining time pauses while stopped or disconnected. Totals are saved regularly and on a clean stop; an abrupt power loss can lose observations since the last save.
+
+**Show console** also provides miner input. Type a command and press Enter or **Send command**, or use **Send key** to send text without Enter (for shortcuts such as `h`). Input goes to the running miner’s standard input, not a system shell. Supported commands and shortcuts depend on the miner; this does not add commands to engines that do not implement them.
 
 The native console reports new jobs and accepted/rejected shares immediately, with a telemetry summary approximately once every 60 seconds. The dashboard and local API keep refreshing independently.
 

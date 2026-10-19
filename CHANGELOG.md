@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.1 Beta · 2026-10-19
+
+- Enabled settings editing and saving while mining; the active session keeps its existing engine, connection, monitoring and fee settings until the next manual start.
+- Added the save confirmation explaining how to apply settings by stopping and restarting the miner.
+- Connected the PeakMiner Browse button to executable selection.
+- Added console input with Send command / Enter and Send key controls. Commands are passed to the selected miner; supported shortcuts depend on that miner.
+
 ## 1.0 Beta 2 · 2026-10-18
 
 - Fixed a Windows startup check that falsely reported unused API ports as occupied.
