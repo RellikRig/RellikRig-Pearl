@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.2 Beta · 2026-10-19
+
+- Fixed pool website, wallet stats and PeakMiner folder links on Linux by launching the system handler without bundled Qt library/plugin paths.
+- Used the Windows system URL/file handler with its normal DLL search path, restoring the app's path afterward.
+- Added visible link-launch errors to the console and dashboard status.
+- Your pool stats opens the lookup page and copies the active wallet address for pasting there.
+
 ## 1.0.1 Beta · 2026-10-19
 
 - Enabled settings editing and saving while mining; the active session keeps its existing engine, connection, monitoring and fee settings until the next manual start.

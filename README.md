@@ -1,4 +1,4 @@
-# RellikRig · v1.0.1 Beta
+# RellikRig · v1.0.2 Beta
 
 A closed-source Pearl GPU miner and desktop monitor for Windows and Linux, styled to match [Rellik’s Pearl pool](https://pearl.rellik.dev/).
 
@@ -10,8 +10,8 @@ Download the platform archive and `SHA256SUMS` from [GitHub Releases](https://gi
 
 | Platform | Archive | Launch |
 |---|---|---|
-| Windows x64 | `RellikRig-Windows-1.0.1-Beta.zip` | Extract the whole folder, then open `RellikRig.exe` |
-| Linux x64 | `RellikRig-Linux-1.0.1-Beta.zip` | Extract the whole folder, then run `./RellikRig` |
+| Windows x64 | `RellikRig-Windows-1.0.2-Beta.zip` | Extract the whole folder, then open `RellikRig.exe` |
+| Linux x64 | `RellikRig-Linux-1.0.2-Beta.zip` | Extract the whole folder, then run `./RellikRig` |
 
 Keep `_internal` beside the executable. Python, Rust and the CUDA Toolkit are not required. An installed NVIDIA driver is required. The retained native profile was validated on an RTX 5080 with 16 GB VRAM; other packaged NVIDIA architectures have not received equivalent performance validation. The native RTX 5080 profile needs about 14 GB of available VRAM.
 
@@ -81,6 +81,8 @@ Closing the window keeps mining in the tray when enabled. Right-click the tray i
 ![Pearl dashboard before mining](docs/dashboard.png)
 
 ![Dark Miner settings](docs/settings.png)
+
+**Pool website** opens the pool in your default browser. **Your pool stats** opens its lookup page and copies the active wallet address; paste it into the lookup field. The system browser and file manager launch with their own libraries, so bundled Qt files do not override KDE’s installed version.
 
 ## Local API and saved settings
 
