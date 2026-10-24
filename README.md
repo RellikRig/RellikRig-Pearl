@@ -1,4 +1,20 @@
-# RellikRig · v1.0.5 Beta
+# RellikRig · Pearl GPU mining
+
+Closed-source Pearl mining applications for NVIDIA GPUs on Windows/Linux and Apple silicon Macs.
+
+## Mac · 1.07 RC
+
+[Download RellikRig Mac 1.07 RC](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.07-rc) · [Mac installation and usage guide](docs/Mac-1.07-RC.md)
+
+Extract the ZIP and launch **RellikRig.app**, or drag it into Applications. No Python, Rust, Xcode, or terminal setup is required. This is an arm64 Apple silicon app; it was tested on an **M3 Pro MacBook Pro with 18 GB RAM**, where the retained engine measured **3.02 TH/s over ten minutes**. Actual rates depend on the machine and workload. The app is locally signed and is not Developer ID notarized.
+
+The default pool is `stratum+ssl://pearl.rellik.dev:3333`. Native miner fees match the NVIDIA build: **0% on that Rellik endpoint and 2% on other compatible pools**; pool fees remain separate. A fresh installation has an empty wallet and automatic mining disabled. The Mac package includes its Metal engine, compact dashboard, console, pause/resume, idle controls, and local API. PeakMiner monitoring remains a Windows/Linux feature; PeakMiner is never bundled.
+
+Only compiled app files and public documentation/notices are distributed. RellikRig implementation source remains private.
+
+## Windows and Linux · 1.0.5 Beta
+
+The remaining sections describe the Windows/Linux packages. The Mac release has its own version and the guide above.
 
 A closed-source Pearl GPU miner and desktop monitor for Windows and Linux, styled to match [Rellik’s Pearl pool](https://pearl.rellik.dev/).
 
