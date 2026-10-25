@@ -12,28 +12,28 @@ The default pool is `stratum+ssl://pearl.rellik.dev:3333`. Native miner fees mat
 
 Only compiled app files and public documentation/notices are distributed. RellikRig implementation source remains private.
 
-## Windows and Linux · 1.0.5 Beta
+## Windows and Linux · 1.07 RC
 
-The remaining sections describe the Windows/Linux packages. The Mac release has its own version and the guide above.
+Version 1.07 RC is the unified release for Windows, Linux and Apple silicon Mac. The remaining sections describe the Windows/Linux packages; use the Mac guide above for platform-specific instructions.
 
 A closed-source Pearl GPU miner and desktop monitor for Windows and Linux, styled to match [Rellik’s Pearl pool](https://pearl.rellik.dev/).
 
 RellikRig includes its native NVIDIA engine, an optional PeakMiner runner, live GPU statistics, an embedded console, and system tray controls. This release is Pearl-only; it contains no Monero or NOID CPU miner.
 
-This update clears stale monitoring values, recovers invalid settings fields while retaining valid preferences, and improves tray controls and window restoration.
+This release brings matching dashboard layouts across Windows, Linux and Mac, with Current Session and Total Mining Time views, accepted/rejected/stale counters, rolling averages, chart history, pause/resume, idle mining and an interactive console.
 
 ## Download and run
 
-Download the platform archive and `SHA256SUMS` from [GitHub Releases](https://github.com/RellikRig/RellikRig-Pearl/releases).
+Download your platform archive and `SHA256SUMS.txt` from the [1.07 RC release](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.07-rc). This is a release candidate. Verify the archive against the published checksums before running it.
 
 | Platform | Archive | Launch |
 |---|---|---|
-| Windows x64 | `RellikRig-Windows-1.0.5-Beta.zip` | Extract the whole folder, then open `RellikRig.exe` |
-| Linux x64 | `RellikRig-Linux-1.0.5-Beta.zip` | Extract the whole folder, then run `./RellikRig` |
+| Windows x64 | `RellikRig-Windows-1.07-RC.zip` | Extract the whole folder, then open `RellikRig.exe` |
+| Linux x64 | `RellikRig-Linux-1.07-RC.zip` | Extract the whole folder, then run `./RellikRig` |
 
 Keep `_internal` beside the executable. Python, Rust and the CUDA Toolkit are not required. An installed NVIDIA driver is required. The retained native profile was validated on an RTX 5080 with 16 GB VRAM; other packaged NVIDIA architectures have not received equivalent performance validation. The native RTX 5080 profile needs about 14 GB of available VRAM.
 
-The Windows build was cross-compiled and its interface and policy tests were run under Wine. Native Windows GPU mining remains a user-test item for this beta. The Linux native engine and CUDA images are retained from the previously validated build.
+The 1.07 RC release includes archive integrity, source-exclusion, packaged fee behavior, dashboard regression and platform launch checks. Windows was hardware-tested by the release owner; this does not establish equivalent validation for every NVIDIA GPU or driver. The Mac package is locally signed, not Apple Developer ID notarized.
 
 ## First run
 
