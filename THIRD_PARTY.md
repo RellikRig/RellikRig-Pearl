@@ -6,7 +6,7 @@ Their notices are included under `LICENSES` in each release.
 - Native engine reference: [pearl-hashrate-miner](https://github.com/puneet-mehta/pearl-hashrate-miner), MIT / Apache-2.0.
 - Consensus and proof dependencies: [Pearl](https://github.com/pearl-research-labs/pearl), ISC; Plonky2, MIT / Apache-2.0.
 - CUTLASS/CuTe headers: NVIDIA BSD-3-Clause.
-- Qt/PySide6 6.8.3 and Shiboken6: LGPL-3.0 (applicable bundled modules), with third-party notices under their own terms. Qt is dynamically linked and replaceable in `_internal`.
+- Qt/PySide6 and Shiboken6 (Linux 6.8.3; Windows 6.8.3; Mac 6.11.2): LGPL-3.0 (applicable bundled modules), with third-party notices under their own terms. Qt is dynamically linked and replaceable beside the executable (within the app bundle on Mac).
 - CPython: Python Software Foundation license, including its bundled dependency notices.
 - psutil: BSD-3-Clause.
 - X11 idle detection: libXss, MIT/X11; see `libXss-COPYING.txt`.
@@ -24,3 +24,5 @@ LGPL-covered libraries with compatible builds and debug those modifications.
 
 No NVIDIA driver or CUDA Toolkit is distributed. PeakMiner is installed by the
 user from its official distribution; no PeakMiner source or binary is included.
+
+- Nuitka native compilation runtime: AGPL-3.0 with the Nuitka Runtime Library Exception, which permits proprietary compiled application output. See LICENSES/Nuitka. The compiler and generated C sources are not distributed.

@@ -1,4 +1,4 @@
-RellikRig v1.0 Beta
+RellikRig 1.10
 Copyright (c) 2026 RellikRig. All rights reserved.
 
 Permission is granted to download and use the official compiled RellikRig

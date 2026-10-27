@@ -1,0 +1,27 @@
+{
+  "version": "1.10",
+  "proprietary_module_format": "native machine code (Nuitka)",
+  "implementation_source_included": false,
+  "peakminer_included": false,
+  "empty_peakminer_folder": true,
+  "launch_checks": {
+    "Linux": "native Qt smoke passed; stopped/manual startup; dashboards, settings, calculator, benchmark rendered",
+    "Windows": "Wine Qt smoke and controller CLI passed; no native Windows hardware mining test after packaging change",
+    "Mac": "Apple silicon native GUI remained running; bundled Metal self-check and controller CLI passed; deep/strict code-sign verification passed"
+  },
+  "native_application_modules": {
+    "Linux_GUI": 29,
+    "Linux_controller": 8,
+    "Windows_GUI": 29,
+    "Windows_controller": 8,
+    "Mac": 31
+  },
+  "native_mining_engines": "Linux/Windows engine and kernel files hash-matched to the owner-tested build; Mac retains the same Metal executable code with local signing",
+  "benchmark_note": "Owner-supplied exports predate native GUI/controller packaging hardening; they are observations, not a new benchmark of these packages.",
+  "archive_integrity_checked": true,
+  "sha256": {
+    "RellikRig-Linux-1.10.zip": "b85760f74b549d247d1d3c497ec88498d9e79bbd925ef57b293ae7d9f7b96992",
+    "RellikRig-Mac-1.10.zip": "730ef437fc90c7ccb6e5572b254e910a52d4912b624c3ff26be89de539bfd83f",
+    "RellikRig-Windows-1.10.zip": "6ac877fb5fcef812b139263cce70447ed57e5ea7c187b0f8ff941c56c3310b38"
+  }
+}
