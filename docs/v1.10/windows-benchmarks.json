@@ -1,0 +1,79 @@
+[
+  {
+    "id": "09b2d0095879416db05b4e36feb3684d",
+    "label": "+2229M +414C",
+    "started_at": 1793100824.8806314,
+    "warmup_seconds": 5,
+    "measurement_seconds": 3600,
+    "devices": [
+      {
+        "device_id": "GPU-ad247343-1335-210b-f5f1-95566e34707e",
+        "device_name": "NVIDIA GeForce RTX 5080 \u00b7 0",
+        "engine": "RellikRig",
+        "engine_version": "1.07 RC",
+        "power_scope": "GPU",
+        "samples": 687,
+        "covered_seconds": 3597.156,
+        "coverage_percent": 99.92099999999999,
+        "gaps": 0,
+        "counter_resets": 0,
+        "source_changes": 0,
+        "metrics": {
+          "hashrate_ths": {
+            "average": 240.94571208349106,
+            "min": 239.29977214707367,
+            "max": 242.18140983490966,
+            "observed_seconds": 3597.156,
+            "variation_percent": 0.2614596860163452
+          },
+          "power_watts": {
+            "average": 377.83330055188037,
+            "min": 365.69,
+            "max": 388.74,
+            "observed_seconds": 3597.156,
+            "variation_percent": 1.534276642137203
+          },
+          "temperature_c": {
+            "average": 72.61845274433476,
+            "min": 69.0,
+            "max": 74.0,
+            "observed_seconds": 3597.156,
+            "variation_percent": 0.8440760477944247
+          },
+          "fan_percent": {
+            "average": 75.90928361183117,
+            "min": 71.0,
+            "max": 80.0,
+            "observed_seconds": 3597.156,
+            "variation_percent": 1.332715777896831
+          },
+          "core_mhz": {
+            "average": 2947.650558524566,
+            "min": 2932.0,
+            "max": 3060.0,
+            "observed_seconds": 3597.156,
+            "variation_percent": 0.294848772378187
+          },
+          "memory_mhz": {
+            "average": 17030.000000000007,
+            "min": 17030.0,
+            "max": 17030.0,
+            "observed_seconds": 3597.156,
+            "variation_percent": 2.027404480336135e-06
+          },
+          "efficiency_gh_w": {
+            "average": 637.8500945825732,
+            "min": 617.4239037518345,
+            "max": 660.5413183169798,
+            "observed_seconds": 3597.156,
+            "variation_percent": 1.5168557991446592
+          }
+        },
+        "accepted": 248.0,
+        "rejected": 1.0,
+        "stale": 1.0,
+        "stability": "steady observed hashrate"
+      }
+    ]
+  }
+]

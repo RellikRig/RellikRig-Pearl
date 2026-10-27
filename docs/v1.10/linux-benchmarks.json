@@ -1,0 +1,156 @@
+[
+  {
+    "id": "645bb06f802b486598c15d11b0be147c",
+    "label": "5080 +400C +2000M +110P 80F",
+    "started_at": 1793061292.3613737,
+    "warmup_seconds": 0,
+    "measurement_seconds": 150,
+    "devices": [
+      {
+        "device_id": "GPU-ad247343-1335-210b-f5f1-95566e34707e",
+        "device_name": "NVIDIA GeForce RTX 5080 \u00b7 0",
+        "engine": "RellikRig",
+        "engine_version": "1.07 RC",
+        "power_scope": "GPU",
+        "samples": 28,
+        "covered_seconds": 145.00203073599982,
+        "coverage_percent": 96.66802049066655,
+        "gaps": 0,
+        "counter_resets": 0,
+        "source_changes": 0,
+        "metrics": {
+          "hashrate_ths": {
+            "average": 241.4269365579834,
+            "min": 239.98061781549768,
+            "max": 242.0334446277411,
+            "observed_seconds": 145.00203073599982,
+            "variation_percent": 0.26960804721753273
+          },
+          "power_watts": {
+            "average": 384.54700332827593,
+            "min": 382.47,
+            "max": 387.57,
+            "observed_seconds": 145.00203073599982,
+            "variation_percent": 0.3833468779301114
+          },
+          "temperature_c": {
+            "average": 69.35173585863674,
+            "min": 69.0,
+            "max": 70.0,
+            "observed_seconds": 145.00203073599982,
+            "variation_percent": 0.6885365304051775
+          },
+          "fan_percent": {
+            "average": 79.96551108987842,
+            "min": 79.0,
+            "max": 81.0,
+            "observed_seconds": 145.00203073599982,
+            "variation_percent": 0.5378968143268101
+          },
+          "core_mhz": {
+            "average": 2951.6448074811874,
+            "min": 2940.0,
+            "max": 2962.0,
+            "observed_seconds": 145.00203073599982,
+            "variation_percent": 0.17776859027769135
+          },
+          "memory_mhz": {
+            "average": 16801.0,
+            "min": 16801.0,
+            "max": 16801.0,
+            "observed_seconds": 145.00203073599982,
+            "variation_percent": 0.0
+          },
+          "efficiency_gh_w": {
+            "average": 627.8333247627805,
+            "min": 621.66047854805,
+            "max": 632.776507443575,
+            "observed_seconds": 145.00203073599982,
+            "variation_percent": 0.5454195796408242
+          }
+        },
+        "accepted": 14.0,
+        "rejected": 0,
+        "stale": 0,
+        "stability": "steady observed hashrate"
+      }
+    ]
+  },
+  {
+    "id": "20b2b98c478343ccb18e7877ece43db9",
+    "label": "10 Hour 5080 +400C +2000M +110P 80F",
+    "started_at": 1793061564.0765567,
+    "warmup_seconds": 0,
+    "measurement_seconds": 36000,
+    "devices": [
+      {
+        "device_id": "GPU-ad247343-1335-210b-f5f1-95566e34707e",
+        "device_name": "NVIDIA GeForce RTX 5080 \u00b7 0",
+        "engine": "RellikRig",
+        "engine_version": "1.07 RC",
+        "power_scope": "GPU",
+        "samples": 6450,
+        "covered_seconds": 35993.998829721,
+        "coverage_percent": 99.98333008255833,
+        "gaps": 0,
+        "counter_resets": 0,
+        "source_changes": 0,
+        "metrics": {
+          "hashrate_ths": {
+            "average": 241.34334021583538,
+            "min": 238.18573513755896,
+            "max": 242.2713985498237,
+            "observed_seconds": 35993.998829721,
+            "variation_percent": 0.2466727827037513
+          },
+          "power_watts": {
+            "average": 384.9714661771865,
+            "min": 375.06,
+            "max": 396.24,
+            "observed_seconds": 35993.998829721,
+            "variation_percent": 0.6122953798645523
+          },
+          "temperature_c": {
+            "average": 69.48070378057797,
+            "min": 60.0,
+            "max": 74.0,
+            "observed_seconds": 35993.998829721,
+            "variation_percent": 2.164912879507201
+          },
+          "fan_percent": {
+            "average": 80.00648772971033,
+            "min": 79.0,
+            "max": 81.0,
+            "observed_seconds": 35993.998829721,
+            "variation_percent": 0.43560893587965294
+          },
+          "core_mhz": {
+            "average": 2951.049762868504,
+            "min": 2932.0,
+            "max": 3060.0,
+            "observed_seconds": 35993.998829721,
+            "variation_percent": 0.2480087457402623
+          },
+          "memory_mhz": {
+            "average": 16800.99999999995,
+            "min": 16801.0,
+            "max": 16801.0,
+            "observed_seconds": 35993.998829721,
+            "variation_percent": 8.596841948668586e-06
+          },
+          "efficiency_gh_w": {
+            "average": 626.9397570148876,
+            "min": 608.8200156306099,
+            "max": 645.1954412804768,
+            "observed_seconds": 35993.998829721,
+            "variation_percent": 0.7500575152157272
+          }
+        },
+        "accepted": 2546.0,
+        "rejected": 3.0,
+        "stale": 3.0,
+        "stability": "steady observed hashrate"
+      }
+    ]
+  }
+]

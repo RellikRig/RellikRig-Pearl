@@ -1,0 +1,142 @@
+[
+  {
+    "id": "d272e22502194d3a8d8e52a94a18f502",
+    "label": "M3Pro MacBook Pro 10 Hour",
+    "started_at": 1793062971.7691782,
+    "warmup_seconds": 30,
+    "measurement_seconds": 36000,
+    "devices": [
+      {
+        "device_id": "apple-silicon-system",
+        "device_name": "Apple M3 Pro",
+        "engine": "RellikRig Metal",
+        "engine_version": "1.07 RC",
+        "power_scope": "System / whole Mac",
+        "samples": 6000,
+        "covered_seconds": 35994.00068625,
+        "coverage_percent": 99.98333523958334,
+        "gaps": 0,
+        "counter_resets": 0,
+        "source_changes": 0,
+        "metrics": {
+          "hashrate_ths": {
+            "average": 2.8989213140054657,
+            "min": 2.3955102363873944,
+            "max": 3.0889622260255063,
+            "observed_seconds": 35994.00068625,
+            "variation_percent": 4.0780321097020344
+          },
+          "power_watts": {
+            "average": 57.07155006947227,
+            "min": 49.535011291503906,
+            "max": 62.82753372192383,
+            "observed_seconds": 35994.00068625,
+            "variation_percent": 5.084368848680696
+          },
+          "temperature_c": {
+            "average": 84.04937280906168,
+            "min": 79.53446197509766,
+            "max": 90.19151306152344,
+            "observed_seconds": 35994.00068625,
+            "variation_percent": 1.8640376689122315
+          },
+          "fan_rpm": {
+            "average": 6479.501815345342,
+            "min": 5961.0,
+            "max": 7365.0,
+            "observed_seconds": 35994.00068625,
+            "variation_percent": 0.679270805508394
+          },
+          "core_mhz": {
+            "average": 1329.2751173808947,
+            "min": 1215.0,
+            "max": 1376.0,
+            "observed_seconds": 35994.00068625,
+            "variation_percent": 2.2992126570755134
+          },
+          "efficiency_gh_w": {
+            "average": 50.86329275248157,
+            "min": 42.80239222617829,
+            "max": 57.513618279930505,
+            "observed_seconds": 35994.00068625,
+            "variation_percent": 4.1651608983708615
+          }
+        },
+        "accepted": 346.0,
+        "rejected": 0,
+        "stale": 0,
+        "stability": "steady observed hashrate"
+      }
+    ]
+  },
+  {
+    "id": "60467f20ec7a4160ad99db0dc76d8a6f",
+    "label": "M3Pro MacBook Pro 1 Hour",
+    "started_at": 1793113357.9123452,
+    "warmup_seconds": 30,
+    "measurement_seconds": 3600,
+    "devices": [
+      {
+        "device_id": "apple-silicon-system",
+        "device_name": "Apple M3 Pro",
+        "engine": "RellikRig Metal",
+        "engine_version": "1.07 RC",
+        "power_scope": "System / whole Mac",
+        "samples": 600,
+        "covered_seconds": 3594.001379583002,
+        "coverage_percent": 99.83337165508338,
+        "gaps": 0,
+        "counter_resets": 0,
+        "source_changes": 0,
+        "metrics": {
+          "hashrate_ths": {
+            "average": 3.0438645790571477,
+            "min": 2.7439335694973255,
+            "max": 3.109461189057139,
+            "observed_seconds": 3594.001379583002,
+            "variation_percent": 1.5450912652494102
+          },
+          "power_watts": {
+            "average": 61.679524018427536,
+            "min": 59.51008224487305,
+            "max": 63.63232421875,
+            "observed_seconds": 3594.001379583002,
+            "variation_percent": 0.7880085289324281
+          },
+          "temperature_c": {
+            "average": 84.68804950329675,
+            "min": 83.85424041748047,
+            "max": 85.50411987304688,
+            "observed_seconds": 3594.001379583002,
+            "variation_percent": 0.18746989097496647
+          },
+          "fan_rpm": {
+            "average": 6477.325254520236,
+            "min": 6393.0,
+            "max": 6568.0,
+            "observed_seconds": 3594.001379583002,
+            "variation_percent": 0.4959379756458115
+          },
+          "core_mhz": {
+            "average": 1360.1543996834528,
+            "min": 1347.0,
+            "max": 1374.0,
+            "observed_seconds": 3594.001379583002,
+            "variation_percent": 0.3188203397685801
+          },
+          "efficiency_gh_w": {
+            "average": 49.35348049105161,
+            "min": 43.523553790752,
+            "max": 51.202029005076916,
+            "observed_seconds": 3594.001379583002,
+            "variation_percent": 1.8121882461989698
+          }
+        },
+        "accepted": 34.0,
+        "rejected": 0,
+        "stale": 0,
+        "stability": "steady observed hashrate"
+      }
+    ]
+  }
+]
