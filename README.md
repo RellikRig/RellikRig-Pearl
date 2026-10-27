@@ -85,11 +85,11 @@ Benchmarking records the miner that is already running; it does not overclock th
 | Platform / hardware | Measured window | Coverage | Avg TH/s | Avg W | Avg GH/W | Avg / max °C | Accepted | Rejected / stale* |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Linux · RTX 5080 | 10 hours | 99.98% | 241.343 | 384.971 | 626.940 | 69.48 / 74.00 | 2,546 | 0 / 3 |
-| Windows · RTX 5080 | 1 hour | 99.92% | 240.946 | 377.833 | 637.850 | 72.62 / 74.00 | 248 | 1 / 1 |
+| Windows · RTX 5080 | 1 hour | 99.92% | 240.946 | 377.833 | 637.850 | 72.62 / 74.00 | 248 | 0 / 1 |
 | Mac · Apple M3 Pro | 10 hours | 99.98% | 2.899 | 57.072 | 50.863 | 84.05 / 90.19 | 346 | 0 / 0 |
 | Mac · Apple M3 Pro | 1 hour | 99.83% | 3.044 | 61.680 | 49.353 | 84.69 / 85.50 | 34 | 0 / 0 |
 
-These are time-weighted values from the supplied exports, not advertised minimums. Windows/Linux use **GPU power**; Mac uses **whole-Mac power**, so efficiencies are not directly comparable. Run durations, tuning labels, sampling, and temperatures differ. Tuning labels are the owner's recorded conditions, not recommended settings. *The Linux 10-hour result is corrected to **0 rejected / 3 stale** following the owner's confirmation. Original exports are preserved unchanged. Other rows reproduce their export fields; rejected/stale counters can overlap and must not be added together. No pool-side proof-validity audit is implied by these counts. A 150-second Linux run is also included in the raw exports.
+These are time-weighted values from the supplied exports, not advertised minimums. Windows/Linux use **GPU power**; Mac uses **whole-Mac power**, so efficiencies are not directly comparable. Run durations, tuning labels, sampling, and temperatures differ. Tuning labels are the owner's recorded conditions, not recommended settings. *Following the owner's confirmation, the Linux 10-hour result is **0 rejected / 3 stale**, and the Windows 1-hour result is **0 rejected / 1 stale**. Original exports are preserved unchanged; their rejected/stale counters can overlap and must not be added together. No pool-side proof-validity audit is implied by these counts. A 150-second Linux run is also included in the raw exports.
 
 [Linux JSON](docs/v1.10/linux-benchmarks.json) · [Linux CSV](docs/v1.10/linux-benchmarks.csv) · [Windows JSON](docs/v1.10/windows-benchmarks.json) · [Windows CSV](docs/v1.10/windows-benchmarks.csv) · [Mac JSON](docs/v1.10/mac-benchmarks.json) · [Mac CSV](docs/v1.10/mac-benchmarks.csv)
 
