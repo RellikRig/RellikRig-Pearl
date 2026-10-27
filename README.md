@@ -1,5 +1,11 @@
 # RellikRig 1.10
 
+## Follow Rellik.Dev
+
+- [X / Twitter — @rellikdev](https://x.com/rellikdev?s=11)
+- [TikTok — @rellik.dev](https://www.tiktok.com/@rellik.dev)
+- [Reddit — u/RellikDev](https://www.reddit.com/u/RellikDev/s/hwEroVqcew)
+
 Pearl GPU mining for **Windows, Linux, and Apple silicon Mac**, with a native mining engine, live dashboard, profitability calculator, and measured benchmark history. This is the **full 1.10 release**, without a Beta or RC label.
 
 [Download 1.10](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.10) · [All platform screenshots and exports](docs/v1.10/README.md) · [Support](SUPPORT.md) · [License](LICENSE.txt)
@@ -115,12 +121,6 @@ Owner-provided platform captures; some show the retained engine version or pre-f
 ![Mac settings menu](docs/v1.10/mac-settings.png)
 
 [Full gallery: session/total dashboards, expanded navigation, GPU info, settings, calculator, updates, and benchmark screens](docs/v1.10/README.md)
-
-## Follow Rellik.Dev
-
-- [X / Twitter — @rellikdev](https://x.com/rellikdev?s=11)
-- [TikTok — @rellik.dev](https://www.tiktok.com/@rellik.dev)
-- [Reddit — u/RellikDev](https://www.reddit.com/u/RellikDev/s/hwEroVqcew)
 
 ## API, privacy, and troubleshooting
 
