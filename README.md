@@ -116,6 +116,12 @@ Owner-provided platform captures; some show the retained engine version or pre-f
 
 [Full gallery: session/total dashboards, expanded navigation, GPU info, settings, calculator, updates, and benchmark screens](docs/v1.10/README.md)
 
+## Follow Rellik.Dev
+
+- [X / Twitter — @rellikdev](https://x.com/rellikdev?s=11)
+- [TikTok — @rellik.dev](https://www.tiktok.com/@rellik.dev)
+- [Reddit — u/RellikDev](https://www.reddit.com/u/RellikDev/s/hwEroVqcew)
+
 ## API, privacy, and troubleshooting
 
 One local API port is shared by the selected engine on Windows/Linux, default `4067`; only one should be active. The running session's summary link keeps its active port until Stop → Start. Mac exposes its local native summary at `http://127.0.0.1:4067/summary`. Loopback APIs are local and do not open router/firewall ports.
