@@ -11,7 +11,8 @@ Their notices are included under `LICENSES` in each release.
 - psutil: BSD-3-Clause.
 - X11 idle detection: libXss, MIT/X11; see `libXss-COPYING.txt`.
 - Linux idle observer: Wayland ext-idle-notify protocol definitions, MIT; see `Wayland-idle-protocol-LICENSE.txt`. Uses the system libwayland-client.
-- Inter fonts: SIL Open Font License 1.1.
+- Inter and Oxanium fonts: SIL Open Font License 1.1.
+- macmon (Mac system telemetry): MIT; bundled license in the Mac app.
 - PyInstaller bootloader: GPL with its exception for frozen applications. Build tools are not application source.
 - Rust dependencies: see the bundled crate inventory and individual notices.
 
