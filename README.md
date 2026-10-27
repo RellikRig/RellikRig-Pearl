@@ -100,17 +100,17 @@ Owner-provided platform captures; some show the retained engine version or pre-f
 ### Linux
 
 ![Linux dashboard](docs/v1.10/linux-dashboard.png)
-![Linux benchmark history](docs/v1.10/linux-fullscreen-benchmark.png)
+![Linux settings menu](docs/v1.10/linux-settings-1.png)
 
 ### Windows
 
 ![Windows dashboard](docs/v1.10/windows-dashboard.jpg)
-![Windows benchmark history](docs/v1.10/windows-benchmark.jpg)
+![Windows settings menu](docs/v1.10/windows-settings-1.jpg)
 
 ### Mac
 
 ![Mac dashboard](docs/v1.10/mac-dashboard.png)
-![Mac benchmark history](docs/v1.10/mac-benchmark.png)
+![Mac settings menu](docs/v1.10/mac-settings.png)
 
 [Full gallery: session/total dashboards, expanded navigation, GPU info, settings, calculator, updates, and benchmark screens](docs/v1.10/README.md)
 
