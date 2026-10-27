@@ -100,12 +100,14 @@ Owner-provided platform captures; some show the retained engine version or pre-f
 ### Linux
 
 ![Linux dashboard](docs/v1.10/linux-dashboard.png)
-![Linux settings menu](docs/v1.10/linux-settings-1.png)
+![Linux settings menu — upper section](docs/v1.10/linux-settings-1.png)
+![Linux settings menu — lower section](docs/v1.10/linux-settings-2.png)
 
 ### Windows
 
 ![Windows dashboard](docs/v1.10/windows-dashboard.jpg)
-![Windows settings menu](docs/v1.10/windows-settings-1.jpg)
+![Windows settings menu — upper section](docs/v1.10/windows-settings-1.jpg)
+![Windows settings menu — lower section](docs/v1.10/windows-settings-2.jpg)
 
 ### Mac
 
