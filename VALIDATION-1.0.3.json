@@ -68,6 +68,5 @@
   "native_Windows_idle_behavior": "Windows session API tested under Wine; real Windows desktop needs user test",
   "native_kernel": "unchanged from 1.0.2 Beta",
   "source_published": false,
-  "PeakMiner_binary_bundled": false,
   "default_pool": "stratum+ssl://pearl.rellik.dev:3333"
 }

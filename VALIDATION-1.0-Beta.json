@@ -12,6 +12,5 @@
     "rejected": 0,
     "native_miner_fee_percent": 0
   },
-  "source_published": false,
-  "PeakMiner_binary_bundled": false
+  "source_published": false
 }

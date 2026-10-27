@@ -22,7 +22,6 @@ and [Qt for Python source](https://download.qt.io/official_releases/QtForPython/
 The bundled libraries are unmodified vendor wheels. You may replace the
 LGPL-covered libraries with compatible builds and debug those modifications.
 
-No NVIDIA driver or CUDA Toolkit is distributed. PeakMiner is installed by the
-user from its official distribution; no PeakMiner source or binary is included.
+No NVIDIA driver or CUDA Toolkit is distributed.
 
 - Nuitka native compilation runtime: AGPL-3.0 with the Nuitka Runtime Library Exception, which permits proprietary compiled application output. See LICENSES/Nuitka. The compiler and generated C sources are not distributed.

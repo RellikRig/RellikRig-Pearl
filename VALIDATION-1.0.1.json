@@ -13,11 +13,9 @@
     "Windows_Wine": "passed"
   },
   "settings_deferred_during_mining": "passed in both engine directions",
-  "PeakMiner_browse_button": "passed",
   "console_commands_and_raw_keys_to_real_child_stdin": "passed",
   "native_Windows_GPU_mining": "requires user test",
   "native_kernel": "unchanged from Beta 2",
   "source_published": false,
-  "PeakMiner_binary_bundled": false,
   "default_pool": "stratum+ssl://pearl.rellik.dev:3333"
 }

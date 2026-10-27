@@ -28,7 +28,7 @@ The M3 Pro profile runs a disjoint combination of Metal matrix work and persiste
 
 The policy matches native Linux/Windows RellikRig and is applied automatically by the controller. A saved percentage or legacy `--dev-fee` argument cannot override it. The 2% allocation is 36 seconds per 30-minute cycle, with the project wallet as payee; switching and preparation have overhead. Pool fees are separate. The Rellik pool's published pool fee still applies when its miner fee is 0%.
 
-This Mac build uses its bundled native Metal engine. PeakMiner is not included, and PeakMiner monitoring is a Linux/Windows feature. The empty `Peakminer` directory contains no miner or downloader.
+This Mac build uses its bundled native Metal engine.
 
 ## Controls and statistics
 
@@ -55,6 +55,6 @@ The controller requires a compatible Pearl V3/GZIP-v2 TLS endpoint. Do not use t
 
 ## Source and notices
 
-RellikRig's application implementation remains private. This distribution contains compiled application files, public documentation, checksums, and license notices. No wallet seed, private key, user configuration, development source checkout, or PeakMiner binary is included. GitHub's automatic source archives contain the documentation repository only.
+RellikRig's application implementation remains private. This distribution contains compiled application files, public documentation, checksums, and license notices. No wallet seed, private key, user configuration, or development source checkout is included. GitHub's automatic source archives contain the documentation repository only.
 
 See `LICENSE.txt`, `THIRD_PARTY.md`, and `LICENSES/` for component terms. Qt/PySide libraries are dynamically linked inside `RellikRig.app/Contents/Frameworks`; their licenses preserve the right to replace and debug compatible LGPL-covered components.

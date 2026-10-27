@@ -19,6 +19,5 @@
   "native_Windows_GPU_mining": "awaiting user test",
   "native_kernel": "unchanged from Beta 1",
   "source_published": false,
-  "PeakMiner_binary_bundled": false,
   "default_pool": "stratum+ssl://pearl.rellik.dev:3333"
 }

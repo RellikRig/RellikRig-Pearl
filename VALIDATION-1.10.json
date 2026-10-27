@@ -2,8 +2,6 @@
   "version": "1.10",
   "proprietary_module_format": "native machine code (Nuitka)",
   "implementation_source_included": false,
-  "peakminer_included": false,
-  "empty_peakminer_folder": true,
   "launch_checks": {
     "Linux": "native Qt smoke passed; stopped/manual startup; dashboards, settings, calculator, benchmark rendered",
     "Windows": "Wine Qt smoke and controller CLI passed; no native Windows hardware mining test after packaging change",

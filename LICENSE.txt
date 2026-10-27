@@ -16,4 +16,4 @@ Third-party components remain subject to their respective licenses and notices.
 Nothing here restricts rights granted by those licenses, including replacing,
 modifying or debugging LGPL-covered Qt/PySide libraries. The application is
 distributed with dynamically linked Qt libraries and their source-access notes.
-PeakMiner is not included; its separate license applies when it is selected.
+

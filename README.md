@@ -42,15 +42,12 @@ Changes to engine, wallet, pool, devices, and API port apply on the next Stop �
 |---|---|---|
 | Native RellikRig NVIDIA engine | Windows, Linux | 0% on `pearl.rellik.dev`; 2% on other compatible pools |
 | Native RellikRig Metal engine | Apple silicon Mac | 0% on `pearl.rellik.dev`; 2% on other compatible pools |
-| Optional PeakMiner runner / monitor | Windows, Linux | Additional 1% RellikRig controller fee, plus PeakMiner's own developer fee |
 
 Pool fees are separate. The app shows the applicable fee for the selected engine and pool. Native packaged mining/proof/fee behavior is retained in this GUI release. Engine telemetry and benchmark exports may still identify the retained native engine as **1.07 RC**; the application release and download version is **1.10**.
 
-**PeakMiner is not bundled.** Download it separately from its [official releases](https://github.com/peakminer/peakminer/releases), place it in the empty `Peakminer` directory, then select PeakMiner in Settings. Browse selects another location; Open folder opens the directory. The executable can also be detected inside an extracted subfolder. On Linux, give the downloaded executable permission to run. Use one selected miner at a time. BZMiner/SRBMiner are not advertised as supported in this release.
-
 The default connection uses verified TLS. Alternative pools must support the packaged Pearl proof protocol; a pool connection alone does not guarantee compatible share submission. The optional local relay address, connection/latency fallback, and custom difficulty controls are retained on Windows/Linux.
 
-Windows/Linux include device selection (`all`, one index, or comma-separated indices), combined dashboard statistics, and per-GPU rows. Packaged architecture support does not imply that every card or VRAM capacity has been hardware-qualified. The retained RTX 5080 profile uses about 14 GB available VRAM; the supplied measurements validate the RTX 5080, not a 12 GB 4070 Ti. No new 4070 Ti performance claim is made here. Mac uses its native Metal/Accelerate backend, not PeakMiner or CUDA.
+Windows/Linux include device selection (`all`, one index, or comma-separated indices), combined dashboard statistics, and per-GPU rows. Packaged architecture support does not imply that every card or VRAM capacity has been hardware-qualified. The retained RTX 5080 profile uses about 14 GB available VRAM; the supplied measurements validate the RTX 5080, not a 12 GB 4070 Ti. No new 4070 Ti performance claim is made here. Mac uses its native Metal/Accelerate backend, without CUDA.
 
 ## Dashboard, charts, and counters
 
@@ -131,4 +128,4 @@ Submit issues with OS, driver, device, selected engine, and error text at [GitHu
 
 RellikRig implementation source remains private. Application and controller modules are compiled to native machine code, rather than distributed as packaged Python bytecode. Native compilation makes recovery harder; it does not make reverse engineering impossible. This repository distributes public documentation, owner-provided screenshots/benchmark exports, notices, and compiled release packages only. GitHub's automatic “Source code” ZIP/TAR assets contain this **documentation repository**, not the miner implementation.
 
-See [LICENSE.txt](LICENSE.txt), [THIRD_PARTY.md](THIRD_PARTY.md), and bundled component notices. Qt/PySide LGPL rights and third-party licenses remain applicable. PeakMiner is separately downloaded and governed by its own license/fees.
+See [LICENSE.txt](LICENSE.txt), [THIRD_PARTY.md](THIRD_PARTY.md), and bundled component notices. Qt/PySide LGPL rights and third-party licenses remain applicable.

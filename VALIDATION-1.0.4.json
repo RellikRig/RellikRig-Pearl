@@ -16,7 +16,6 @@
   },
   "settings_checks": [
     "Miner/API/GPU info tabs",
-    "PeakMiner selection and browser visibility",
     "Running-session API links retain active ports",
     "GPU information refresh and unavailable values",
     "Diagnostics GPU information and wallet redaction"
@@ -70,6 +69,5 @@
   "native_Windows_GPU_mining": "requires user test",
   "native_kernel": "unchanged from 1.0.3 Beta",
   "source_published": false,
-  "PeakMiner_binary_bundled": false,
   "default_pool": "stratum+ssl://pearl.rellik.dev:3333"
 }
