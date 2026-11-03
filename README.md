@@ -24,6 +24,8 @@ Pearl GPU mining for **Windows, Linux, and Apple silicon Mac**, with a native mi
 
 Download only from this repository’s official releases and verify the published SHA-256 checksums. The owner reported no Microsoft Defender alert during the Windows v1.2 test; that is an observation from one machine, not an independent scan certificate. Any published scanner report should identify the exact package hash, scanner/version, definition date, scan time, and result. “No detections in this scan” provides supporting evidence, not a guarantee of safety or future antivirus acceptance.
 
+**[v1.2 candidate scan report — standard scan: no detections; PUA scan: Windows Nuitka packaging flagged](docs/v1.2/scan-20261103/README.md)**
+
 ## Download and first run
 
 | Platform | Package | Open after extracting |

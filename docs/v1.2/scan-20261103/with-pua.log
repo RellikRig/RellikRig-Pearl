@@ -1,0 +1,15 @@
+packages/RellikRig-Windows-1.2.zip: PUA.Win.Packer.Nuitka-9992781-0 FOUND
+scan-targets/RellikRig-Windows-1.2/RellikRig.exe: PUA.Win.Packer.Nuitka-9992781-0 FOUND
+scan-targets/RellikRig-Windows-1.2/runtime/rellikrig.exe: PUA.Win.Packer.Nuitka-9992781-0 FOUND
+
+----------- SCAN SUMMARY -----------
+Known viruses: 3642926
+Engine version: 1.5.4
+Scanned directories: 843
+Scanned files: 1817
+Infected files: 3
+Data scanned: 488.35 MiB
+Data read: 419.19 MiB (ratio 1.17:1)
+Time: 121.420 sec (2 m 1 s)
+Start Date: 2026:11:03 07:05:46
+End Date:   2026:11:03 07:07:48

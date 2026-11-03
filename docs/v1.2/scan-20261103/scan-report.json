@@ -1,0 +1,84 @@
+{
+  "scanner": "ClamAV 1.5.4",
+  "download_source": "https://www.clamav.net/downloads",
+  "scanner_package_signature_verified": true,
+  "database_update_successful": true,
+  "packages": {
+    "RellikRig-Linux-1.2.zip": {
+      "sha256": "943eb3b6c17873a76281b9c82b69d794f86136466490abcf649b93ef640c0975",
+      "bytes": 82264013
+    },
+    "RellikRig-Windows-1.2.zip": {
+      "sha256": "001dba2cff794c0bde209e55175497bb35e2654e9c2a2fb9b344bcebb3da0ad6",
+      "bytes": 53494537
+    }
+  },
+  "scan_runs": [
+    {
+      "mode": "standard",
+      "pua_detection": false,
+      "started_utc": "2026-11-03T12:04:00.675279+00:00",
+      "finished_utc": "2026-11-03T12:05:46.686859+00:00",
+      "exit_code": 0,
+      "log": "standard.log",
+      "log_sha256": "8061cffad5b2758f04359590d3747e1484ae3904a45b567009e9b30f9dde021a",
+      "detections": [],
+      "scanned_files": 1817,
+      "flagged_files": 0
+    },
+    {
+      "mode": "with-pua",
+      "pua_detection": true,
+      "started_utc": "2026-11-03T12:05:46.687119+00:00",
+      "finished_utc": "2026-11-03T12:07:48.109922+00:00",
+      "exit_code": 1,
+      "log": "with-pua.log",
+      "log_sha256": "7d472556edf74f894368556cfb4071eb821c1c884a6333f3603fd2188596412c",
+      "detections": [
+        "packages/RellikRig-Windows-1.2.zip: PUA.Win.Packer.Nuitka-9992781-0 FOUND",
+        "scan-targets/RellikRig-Windows-1.2/RellikRig.exe: PUA.Win.Packer.Nuitka-9992781-0 FOUND",
+        "scan-targets/RellikRig-Windows-1.2/runtime/rellikrig.exe: PUA.Win.Packer.Nuitka-9992781-0 FOUND"
+      ],
+      "scanned_files": 1817,
+      "flagged_files": 3
+    }
+  ],
+  "modifications_to_scanned_files": false,
+  "public_sample_uploads": false,
+  "limitation": "Single-engine local scan; not a safety guarantee, source audit or universal antivirus approval.",
+  "definitions": {
+    "bytecode.cvd": {
+      "build_time": "11 Sep 2025 08-29 -0400",
+      "version": "339",
+      "signatures": "80",
+      "sha256": "6d4aa01f219e988060fc419f495d07f27e0cdf1a2cccc065971da922c76f7ffb"
+    },
+    "daily.cvd": {
+      "build_time": "03 Nov 2026 06-27 +0000",
+      "version": "28173",
+      "signatures": "355841",
+      "sha256": "e1baff030ff150a60c7e76159a350d2bc33acef395a1139f4cac58937ab91e60"
+    },
+    "main.cvd": {
+      "build_time": "16 Dec 2025 23-18 +0000",
+      "version": "63",
+      "signatures": "3287027",
+      "sha256": "0b2182d229f46981ec8f535382222f7c9dfdd656b250ad47988b910a8d302365"
+    }
+  },
+  "installer_hashes": {
+    "Install-RellikRig-1.2.cmd": "795af4b352c9f76eaee08a53996cdd5a044e241b3ce29246e0c8d88de29cc76a",
+    "Install-RellikRig-1.2.ps1": "95957d65fbed9592da2ffc2f9b51bfb53069913cb643687a5d2e4244d3bf2796"
+  },
+  "installer_scan": {
+    "started_utc": "2026-11-03T12:06:24.725471+00:00",
+    "finished_utc": "2026-11-03T12:06:28.988487+00:00",
+    "exit_code": 0
+  },
+  "positive_control": {
+    "standard_harmless_EICAR_detected": true,
+    "exit_code": 1,
+    "temporary_test_file_removed": true
+  },
+  "result": "Standard scan: no detections. PUA-enabled scan: Windows Nuitka packer classification."
+}
