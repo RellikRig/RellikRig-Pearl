@@ -1,5 +1,15 @@
 # 1.10 — 2026-10-27
 
+## 1.2 — 2026-11-03 — Windows/Linux; NOCK Beta
+
+- Pearl and NOCK dashboards, local GPU telemetry, timestamped terminals and in-app wallet/pool/network pages.
+- Updated RR icons and navigation, persistent user data and benchmark history, calculator improvements and Windows installer delivery.
+- Pearl plus confirmed NOCK receipt benchmark exports; completed two-hour owner Windows RTX 5080 run recorded in README.
+- Bounded endpoint/recovery behavior and strict secure receipt fallback; validated production kernel retained.
+- NOCK merge mining remains Beta with intermittent source/binding pauses. No uninterrupted NOCK, block-win or payout guarantee.
+- Hash-specific ClamAV scan report publishes standard zero detections and the Windows Nuitka PUA classification without hiding it.
+- Mac v1.2 is not included; existing Mac v1.10 remains separate.
+
 Full release with the redesigned RR interface across Windows, Linux, and Apple silicon Mac.
 
 - Expandable RR sidebar; separate Session/Total dashboards; GPU sidebar page and flat settings.

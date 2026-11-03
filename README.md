@@ -1,4 +1,4 @@
-# RellikRig 1.10
+# RellikRig 1.2
 
 ## Follow Rellik.Dev
 
@@ -6,17 +6,17 @@
 - [TikTok — @rellik.dev](https://www.tiktok.com/@rellik.dev)
 - [Reddit — u/RellikDev](https://www.reddit.com/u/RellikDev/s/hwEroVqcew)
 
-## Linux v1.2 demo preview
+## Linux v1.2 demo
 
 [![Watch the Linux v1.2 demo — animated preview](docs/v1.2/linux-demo-preview.gif)](https://github.com/RellikRig/RellikRig-Pearl/raw/refs/heads/main/docs/v1.2/RellikRig-Demo-v12.mp4)
 
 **[Watch or download the full Linux demo (76 seconds)](https://github.com/RellikRig/RellikRig-Pearl/raw/refs/heads/main/docs/v1.2/RellikRig-Demo-v12.mp4)** · [Linux and Windows v1.2 captures](docs/v1.2/README.md)
 
-Preview of the upcoming Windows/Linux interface. **NOCK merge mining is Beta**: auxiliary work can pause while Pearl continues. The downloads below remain the published v1.10 release; Mac v1.2 is being validated separately.
+**Windows and Linux v1.2 are released. NOCK merge mining remains Beta**: auxiliary work can pause while Pearl continues. Mac stays on v1.10 while v1.2 validation continues.
 
-Pearl GPU mining for **Windows, Linux, and Apple silicon Mac**, with a native mining engine, live dashboard, profitability calculator, and measured benchmark history. This is the **full 1.10 release**, without a Beta or RC label.
+Pearl GPU mining for **Windows and Linux**, with a native engine, live dashboards, profitability calculator and measured benchmark history. This is the **full v1.2 application release**; only optional NOCK merge mining is labeled Beta. Apple silicon Mac remains available as the separate v1.10 release.
 
-[Download 1.10](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.10) · [All platform screenshots and exports](docs/v1.10/README.md) · [Support](SUPPORT.md) · [License](LICENSE.txt)
+[Download v1.2 — Windows/Linux](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.2) · [Mac v1.10](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.10) · [v1.2 screenshots](docs/v1.2/README.md) · [Earlier platform exports](docs/v1.10/README.md) · [Support](SUPPORT.md) · [License](LICENSE.txt)
 
 ## Antivirus notice
 
@@ -24,17 +24,18 @@ Pearl GPU mining for **Windows, Linux, and Apple silicon Mac**, with a native mi
 
 Download only from this repository’s official releases and verify the published SHA-256 checksums. The owner reported no Microsoft Defender alert during the Windows v1.2 test; that is an observation from one machine, not an independent scan certificate. Any published scanner report should identify the exact package hash, scanner/version, definition date, scan time, and result. “No detections in this scan” provides supporting evidence, not a guarantee of safety or future antivirus acceptance.
 
-**[v1.2 candidate scan report — standard scan: no detections; PUA scan: Windows Nuitka packaging flagged](docs/v1.2/scan-20261103/README.md)**
+**[v1.2 scan report — standard scan: no detections; PUA scan: Windows Nuitka packaging flagged](docs/v1.2/scan-20261103/README.md)**
 
 ## Download and first run
 
 | Platform | Package | Open after extracting |
 |---|---|---|
-| Windows x64 / NVIDIA | [RellikRig-Windows-1.10.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.10/RellikRig-Windows-1.10.zip) | `RellikRig.exe` |
-| Linux x64 / NVIDIA | [RellikRig-Linux-1.10.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.10/RellikRig-Linux-1.10.zip) | `./RellikRig` |
-| macOS / Apple silicon arm64 | [RellikRig-Mac-1.10.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.10/RellikRig-Mac-1.10.zip) | `RellikRig.app` |
+| Windows x64 / NVIDIA — installer recommended | [Install-RellikRig-Windows-1.2.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.2/Install-RellikRig-Windows-1.2.zip) | `Install-RellikRig-1.2.cmd` |
+| Windows x64 / NVIDIA — portable | [RellikRig-Windows-1.2.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.2/RellikRig-Windows-1.2.zip) | `RellikRig.exe` |
+| Linux x64 / NVIDIA | [RellikRig-Linux-1.2.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.2/RellikRig-Linux-1.2.zip) | `./RellikRig` |
+| macOS / Apple silicon arm64 — earlier v1.10 | [RellikRig-Mac-1.10.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.10/RellikRig-Mac-1.10.zip) | `RellikRig.app` |
 
-Download [SHA256SUMS.txt](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.10/SHA256SUMS.txt) to verify the archives. Extract the **entire** archive; keep all included files and folders beside the Windows/Linux executable. Python, Rust, Xcode, and the CUDA Toolkit are not required to run the packages. Windows/Linux require an appropriate NVIDIA driver. Mac requires Apple silicon; the published owner measurements are from an M3 Pro with 18 GB unified memory. The Mac app is locally signed and is not Apple Developer ID notarized.
+Download the [v1.2 SHA256SUMS.txt](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.2/SHA256SUMS.txt) to verify Windows/Linux downloads; use the [v1.10 checksums](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.10/SHA256SUMS.txt) for the earlier Mac package. The Windows installer verifies the enclosed package, backs up the previous desktop app, preserves external settings and history, and creates the desktop shortcut. Extract the **entire** archive; keep all included files and folders beside the Windows/Linux executable. Python, Rust, Xcode, and the CUDA Toolkit are not required to run the packages. Windows/Linux require an appropriate NVIDIA driver. Mac requires Apple silicon; the published owner measurements are from an M3 Pro with 18 GB unified memory. The Mac app is locally signed and is not Apple Developer ID notarized.
 
 1. Open **Settings**, select the engine on Windows/Linux, and review the wallet, worker, pool, and device selection.
 2. **Replace the prefilled publisher PRL address with your own receiving address before mining for yourself.** The prefilled address is intentional; it is not generated for the person downloading the app.
@@ -43,20 +44,22 @@ Download [SHA256SUMS.txt](https://github.com/RellikRig/RellikRig-Pearl/releases/
 
 Changes to engine, wallet, pool, devices, and API port apply on the next Stop → Start. Stop another independently running GPU miner first. RellikRig does not terminate unrelated mining applications.
 
-## What is new in 1.10
+## What is new in v1.2
 
-- Completely redesigned cyan, blue, and magenta interface using the new RR artwork, icons, translucent cards, clear outlines, and floating shadows.
-- Click the centered **RR icon** to expand or collapse sidebar labels. Expanded icons align left; the layout choice is saved. Settings stays at the bottom, with Updates above it.
-- Separate **Session Dashboard** and **Total Mined Dashboard** sidebar entries; Session is the default. GPU info is a sidebar page; mining and API settings are one scrollable list.
-- Live hashrate line inside the hashrate card; accepted-share bars use **one-minute intervals**. The former large history chart and last-block-found card have been removed from the dashboard.
-- Completed-share effort bars, a faster one-minute luck line, and pink dotted 100% references. Effort and luck appear only in Session. Estimated-share cards share a row, with rolling averages below them.
-- Console open by default, with clean spacing under the GPU summary. Hiding it collapses the unused window space. Console is output-only: no command text field, Send command, or Send key controls.
-- Optional **Celsius/Fahrenheit** display. Temperature turns orange at the elevated threshold and red 3°C before the configured critical threshold. Defaults: orange at 75°C / 167°F, red at 82°C / 179.6°F, critical at 85°C / 185°F. Threshold settings stay in Celsius. These colors are display indications, not GPU thermal controls.
-- Readable tooltip text without outlines, wrapping at approximately 300 px and constrained to the window where possible or the screen otherwise. Text outlines improve dashboard readability; operation buttons retain normal text.
-- **Mining Calculator** with live telemetry, current pool/network/price inputs, editable assumptions, and saved scenarios. Electricity defaults to $0/kWh.
-- **Benchmark / History** with named observation runs, warm-up exclusion, measured coverage, device comparisons, CSV/JSON export, and **four separately bordered graph cards in one horizontal row**.
-- **Updates** button checks GitHub, downloads the platform ZIP, and verifies its SHA-256. Installation is manual after stopping and exiting; the app does not replace running mining files.
-- Fixed Mac startup when no miner statistics exist, temperature parsing from NVIDIA driver text readings, and unstable pool/worker header updates.
+- Pearl and **NOCK (Beta)** dashboards with local shared GPU work telemetry, share charts, effort, rolling averages, timestamped read-only terminals, and Stop/Pause/Hide console controls.
+- In-app **Stats, Pool, Pearl Network and NOCK Network** pages using available wallet/pool/network data, with background chart history and explanatory tooltips.
+- New RR desktop, taskbar, tray and sidebar artwork; expandable navigation, consistent headings/cards, readable wrapping tooltips and Celsius/Fahrenheit display.
+- Mining Calculator using available measured/pool/network inputs, saved scenarios, day/week/month projections and electricity defaulting to zero.
+- Benchmark history with named runs, excluded warm-up, measured coverage, four separately bordered chart cards, CSV/JSON exports, and **Pearl plus session-wide confirmed NOCK receipts**. Default observation duration is 30 minutes.
+- Persistent settings, accumulated mining totals and benchmark history outside the installation folder; update backup/install helpers and the Windows desktop installer.
+- Automatic miner recovery and bounded pool connection failover. The primary/backup endpoints use verified TLS on port 3333.
+- Secure NOCK receipt API fallback with unchanged certificate validation and exact proof/job/wallet matching. A Pearl ACK alone does not establish NOCK credit.
+
+### NOCK merge mining — Beta
+
+Enable it in Settings and enter your own NOCK receiving address. A compatible pool and fresh eligible binding are required. Auxiliary work can pause during source, lease, checkpoint or block-parent transitions; **Pearl continues when NOCK is unavailable**. Local shared GPU work is shown in MAC/s or TMAC/s; it is not independent NOCK proof-generation speed.
+
+Known limitations include intermittent auxiliary pauses, unavailable pool-wide NOCK widgets, potentially lagging explorer data and benchmark qualified-rate coverage that must not be interpreted as binding uptime. Confirmed NOCK shares require a matching committed receipt. NOCK remains Beta; no uninterrupted availability, block-win or payout guarantee is made.
 
 ## Mining engines, pools, and fees
 
@@ -65,7 +68,7 @@ Changes to engine, wallet, pool, devices, and API port apply on the next Stop �
 | Native RellikRig NVIDIA engine | Windows, Linux | 0% on `pearl.rellik.dev`; 2% on other compatible pools |
 | Native RellikRig Metal engine | Apple silicon Mac | 0% on `pearl.rellik.dev`; 2% on other compatible pools |
 
-Pool fees are separate. The app shows the applicable fee for the selected engine and pool. Native packaged mining/proof/fee behavior is retained in this GUI release. Engine telemetry and benchmark exports may still identify the retained native engine as **1.07 RC**; the application release and download version is **1.10**.
+Pool fees are separate. The app shows the applicable fee for the selected engine and pool. This release retains the validated production kernel; no experimental performance candidate or claimed 3% speed increase is included. The Windows/Linux application and controller version is **1.2**. Earlier Mac v1.10 telemetry may retain an older engine label.
 
 The default connection uses verified TLS. Alternative pools must support the packaged Pearl proof protocol; a pool connection alone does not guarantee compatible share submission. The optional local relay address, connection/latency fallback, and custom difficulty controls are retained on Windows/Linux.
 
@@ -90,7 +93,7 @@ Start/Stop and Pause/Resume remain available from the dashboard and tray. Manual
 
 Windows/Linux idle controls use the platform's input timing or supported X11/Wayland idle backend. Mac includes pause-while-in-use, idle delay, keep-awake, battery-warning behavior, and optional menu-bar operation. Window-close behavior, login startup, and mining-on-launch are configurable. Exit stops app-owned mining. An older application restored by the desktop session manager should be removed from that saved session separately from the current autostart entry.
 
-The embedded terminal shows live miner output. Pool website and Your pool stats open the system browser; the latter copies the configured wallet for lookup. Browser/file-manager launching, diagnostics ZIP creation, saved settings, GPU monitoring while stopped, and local summary links remain available.
+The embedded terminals show live output. Stats, Pool, Pearl Network and NOCK Network display their available information in the app; wallet views use the saved receiving address. Browser/file-manager launching, diagnostics ZIP creation, saved settings, GPU monitoring while stopped, and local summary links remain available.
 
 ## Profitability calculator
 
@@ -100,7 +103,7 @@ Results cover 1, 7, and 30 days, expected PRL, gross revenue, electricity cost, 
 
 ## Benchmarks and performance history
 
-Benchmarking records the miner that is already running; it does not overclock the GPU or launch an unrelated miner. Choose a label, warm-up, and measured window. Local history recording is optional. Results include average/min/max hashrate, power, efficiency, temperature, sample coverage, gaps, counter resets, rate variation, rejected/stale observations, and an observed stability description. Named runs can be compared per device, exported as CSV/JSON, and selected in the calculator. Four cards chart hashrate, power, efficiency, and temperature with independent scales and explicit gaps.
+Observation benchmarking records the miner that is already running without changing GPU settings. Optional session overclocking is separate, requires supported hardware and administrator authorization, and is not enabled by starting an ordinary observation run. Choose a label, warm-up, and measured window. Local history recording is optional. Results include average/min/max hashrate, power, efficiency, temperature, sample coverage, gaps, counter resets, rate variation, rejected/stale observations, and an observed stability description. Named runs can be compared per device, exported as CSV/JSON, and selected in the calculator. Four cards chart hashrate, power, efficiency, and temperature with independent scales and explicit gaps.
 
 ### Owner-supplied measured results
 
@@ -119,7 +122,7 @@ These are time-weighted values from the supplied exports, not advertised minimum
 
 Owner-provided platform captures; some show the retained engine version or pre-final tooltip/temperature formatting.
 
-### Linux — v1.2 preview
+### Linux — v1.2
 
 Clean frames from the Linux demo above.
 
@@ -163,7 +166,7 @@ One local API port is shared by the selected engine on Windows/Linux, default `4
 
 Mining traffic goes to the configured pool. Calculator refreshes contact the compatible public pool/network/price feed; update checks/downloads contact GitHub; external links open your browser. Local history/benchmarks are opt-in; there is no separate analytics upload. The default wallet is public and editable. Diagnostic exports redact wallet information; review any diagnostic before sharing it.
 
-If the app cannot launch, extract the whole package again and check OS/architecture. For missing NVIDIA telemetry, test `nvidia-smi`. For occupied API ports, stop another instance or select a free port. For rejected shares, report the selected engine, pool protocol, version, and exact rejection reason; connected does not necessarily mean compatible. Do not run old and new releases together. Updates require stopping/exiting and manually installing the verified download.
+If the app cannot launch, extract the whole package again and check OS/architecture. For missing NVIDIA telemetry, test `nvidia-smi`. For occupied API ports, stop another instance or select a free port. For rejected shares, report the selected engine, pool protocol, version, and exact rejection reason; connected does not necessarily mean compatible. Do not run old and new releases together. Updates are user initiated and verify downloaded packages. If an older installation does not offer v1.2, use the Windows installer or a full manual download; preserve your external UserData and benchmark history.
 
 Submit issues with OS, driver, device, selected engine, and error text at [GitHub Issues](https://github.com/RellikRig/RellikRig-Pearl/issues). See [SUPPORT.md](SUPPORT.md) and [SECURITY.md](SECURITY.md).
 

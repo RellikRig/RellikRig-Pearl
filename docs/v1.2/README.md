@@ -1,8 +1,8 @@
-# RellikRig v1.2 preview gallery
+# RellikRig v1.2 gallery
 
 [Full Linux demo](RellikRig-Demo-v12.mp4) · [Main README](../../README.md)
 
-These owner-provided views show the upcoming Windows/Linux GUI. NOCK merge mining is Beta. Published v1.10 downloads and earlier Mac screenshots remain separate.
+These owner-provided views show the released Windows/Linux v1.2 GUI. NOCK merge mining is Beta. Published v1.10 downloads and earlier Mac screenshots remain separate.
 
 ## Linux
 

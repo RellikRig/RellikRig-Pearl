@@ -1,0 +1,36 @@
+{
+  "version": "1.2",
+  "platforms": [
+    "Windows x64 NVIDIA",
+    "Linux x64 NVIDIA"
+  ],
+  "Mac_1_2_included": false,
+  "NOCK_status": "Beta",
+  "application_release_prerelease": false,
+  "packages": {
+    "RellikRig-Windows-1.2.zip": "001dba2cff794c0bde209e55175497bb35e2654e9c2a2fb9b344bcebb3da0ad6",
+    "Antivirus-Report-1.2.zip": "8b98acc1480d25f0dcc51748e0bfaa84af7f62fa501c63c60cba831e81ae4554",
+    "Install-RellikRig-1.2.cmd": "795af4b352c9f76eaee08a53996cdd5a044e241b3ce29246e0c8d88de29cc76a",
+    "Install-RellikRig-1.2.ps1": "95957d65fbed9592da2ffc2f9b51bfb53069913cb643687a5d2e4244d3bf2796",
+    "Install-RellikRig-Windows-1.2.zip": "98c5f267756b35dbd0b85b2cb2816c13a2ffd02b89b8d6f8f82df51e63e4a9ce",
+    "RellikRig-Linux-1.2.zip": "943eb3b6c17873a76281b9c82b69d794f86136466490abcf649b93ef640c0975"
+  },
+  "Windows_test": {
+    "measured_seconds": 7200,
+    "average_ths": 240.5439969322236,
+    "average_GPU_watts": 388.1513931858049,
+    "coverage_percent": 99.9425,
+    "accepted_PRL": 502,
+    "stale": 5,
+    "other_rejections": 0,
+    "confirmed_NOCK_receipts": 427
+  },
+  "standard_ClamAV_detections": 0,
+  "PUA_Windows_GUI_detection": "PUA.Win.Packer.Nuitka-9992781-0",
+  "fresh_wallet_entry_enforced": false,
+  "wallet_notice": "Publisher defaults remain in reviewed packages; enter own receiving addresses before mining. Existing saved settings are preserved.",
+  "experimental_kernel_included": false,
+  "verified_3_percent_gain_claimed": false,
+  "source_included": false,
+  "archive_and_per_file_integrity_checked": true
+}
