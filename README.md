@@ -107,6 +107,18 @@ Observation benchmarking records the miner that is already running without chang
 
 ### Owner-supplied measured results
 
+#### v1.2 — Windows RTX 5080, Pearl + NOCK Beta
+
+| Measured window | Coverage | Avg TH/s | Avg W | Avg GH/W | Avg / max °C | Pearl accepted | Other rejected / stale | Confirmed NOCK receipts |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2 hours | 99.94% | 240.544 | 388.151 | 619.746 | 73.08 / 76.00 | 502 | 0 / 5 | 427 |
+
+Owner-supplied November 3, 2026 benchmark, excluding warm-up. The 427 confirmed NOCK receipts were matched against pool accounting. NOCK binding pauses occurred during this run; measurement coverage is not uninterrupted NOCK availability. The NOCK session average is shared GPU matrix work, not additional independent throughput. [v1.2 benchmark capture](docs/v1.2/windows-benchmark.jpg).
+
+Linux v1.2 is shown in the demo and dashboard captures; a new comparable completed Linux v1.2 benchmark is not included here. The older measurements below remain labeled with their original release.
+
+#### Earlier v1.10 measurements
+
 | Platform / hardware | Measured window | Coverage | Avg TH/s | Avg W | Avg GH/W | Avg / max °C | Accepted | Rejected / stale* |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Linux · RTX 5080 | 10 hours | 99.98% | 241.343 | 384.971 | 626.940 | 69.48 / 74.00 | 2,546 | 0 / 3 |
