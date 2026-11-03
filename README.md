@@ -6,9 +6,23 @@
 - [TikTok — @rellik.dev](https://www.tiktok.com/@rellik.dev)
 - [Reddit — u/RellikDev](https://www.reddit.com/u/RellikDev/s/hwEroVqcew)
 
+## Linux v1.2 demo preview
+
+[![Watch the Linux v1.2 demo — animated preview](docs/v1.2/linux-demo-preview.gif)](https://github.com/RellikRig/RellikRig-Pearl/raw/refs/heads/main/docs/v1.2/RellikRig-Demo-v12.mp4)
+
+**[Watch or download the full Linux demo (76 seconds)](https://github.com/RellikRig/RellikRig-Pearl/raw/refs/heads/main/docs/v1.2/RellikRig-Demo-v12.mp4)** · [Linux and Windows v1.2 captures](docs/v1.2/README.md)
+
+Preview of the upcoming Windows/Linux interface. **NOCK merge mining is Beta**: auxiliary work can pause while Pearl continues. The downloads below remain the published v1.10 release; Mac v1.2 is being validated separately.
+
 Pearl GPU mining for **Windows, Linux, and Apple silicon Mac**, with a native mining engine, live dashboard, profitability calculator, and measured benchmark history. This is the **full 1.10 release**, without a Beta or RC label.
 
 [Download 1.10](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.10) · [All platform screenshots and exports](docs/v1.10/README.md) · [Support](SUPPORT.md) · [License](LICENSE.txt)
+
+## Antivirus notice
+
+**Cryptocurrency miners may be flagged by antivirus software as a miner, potentially unwanted application, or suspected malware.** A detection must be reviewed; do not assume every alert is a false positive or disable antivirus protection to install RellikRig.
+
+Download only from this repository’s official releases and verify the published SHA-256 checksums. The owner reported no Microsoft Defender alert during the Windows v1.2 test; that is an observation from one machine, not an independent scan certificate. Any published scanner report should identify the exact package hash, scanner/version, definition date, scan time, and result. “No detections in this scan” provides supporting evidence, not a guarantee of safety or future antivirus acceptance.
 
 ## Download and first run
 
@@ -103,17 +117,36 @@ These are time-weighted values from the supplied exports, not advertised minimum
 
 Owner-provided platform captures; some show the retained engine version or pre-final tooltip/temperature formatting.
 
-### Linux
+### Linux — v1.2 preview
 
-![Linux dashboard](docs/v1.10/linux-dashboard.png)
-![Linux settings menu — upper section](docs/v1.10/linux-settings-1.png)
-![Linux settings menu — lower section](docs/v1.10/linux-settings-2.png)
+Clean frames from the Linux demo above.
 
-### Windows
+![Linux v1.2 Pearl dashboard](docs/v1.2/linux-dashboard.jpg)
+![Linux v1.2 NOCK dashboard — Beta](docs/v1.2/linux-nock.jpg)
 
-![Windows dashboard](docs/v1.10/windows-dashboard.jpg)
-![Windows settings menu — upper section](docs/v1.10/windows-settings-1.jpg)
-![Windows settings menu — lower section](docs/v1.10/windows-settings-2.jpg)
+<details>
+<summary>Linux settings — both scrollable sections</summary>
+
+![Linux settings — upper section](docs/v1.2/linux-settings-1.jpg)
+![Linux settings — lower section](docs/v1.2/linux-settings-2.jpg)
+
+</details>
+
+### Windows — v1.2 owner test
+
+Owner-provided captures from the completed two-hour RTX 5080 test: **240.54 TH/s average**, **388.15 W**, **73.08°C average / 76°C maximum**, 502 accepted Pearl shares and five stale shares (zero other rejections). The export records **427 confirmed NOCK receipts**. Intermittent NOCK binding pauses remain a Beta limitation; this run does not establish uninterrupted auxiliary availability.
+
+![Windows v1.2 Pearl dashboard](docs/v1.2/windows-dashboard.jpg)
+![Windows v1.2 NOCK dashboard — Beta](docs/v1.2/windows-nock.jpg)
+![Windows v1.2 two-hour benchmark](docs/v1.2/windows-benchmark.jpg)
+
+<details>
+<summary>Windows settings — both scrollable sections</summary>
+
+![Windows settings — upper section](docs/v1.2/windows-settings-1.jpg)
+![Windows settings — lower section](docs/v1.2/windows-settings-2.jpg)
+
+</details>
 
 ### Mac
 
