@@ -1,4 +1,4 @@
-# RellikRig 1.2
+# RellikRig v1.22
 
 ## Follow Rellik.Dev
 
@@ -6,17 +6,25 @@
 - [TikTok — @rellik.dev](https://www.tiktok.com/@rellik.dev)
 - [Reddit — u/RellikDev](https://www.reddit.com/u/RellikDev/s/hwEroVqcew)
 
-## Linux v1.2 demo
+## Current release: v1.22 (Windows/Linux)
+
+RellikRig v1.22 is the current public Windows and Linux release. It retains the configurable primary/backup pool failover introduced in v1.21 and adds **Pearl block receipt history and system-tray notices**.
+
+With a backup pool configured, RellikRig retries the primary pool and switches to the backup after three failed primary attempts. It can return to the primary after it is healthy again. The RellikRig development fee is **0% on the native Rellik pool** and **2% on an external backup pool**; pool fees are separate.
+
+**Download:** [Windows installer](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/Install-RellikRig-Windows-1.22.zip) · [Windows portable ZIP](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/RellikRig-Windows-1.22.zip) · [Linux ZIP](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/RellikRig-Linux-1.22.zip) · [SHA-256 checksums](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/RELEASE-SHA256SUMS.txt) · [Full v1.22 release notes](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.22)
+
+The new block notices cover observed **Pearl pool receipts**, not guaranteed payouts or block-finder attribution. **NOCK canonical block-found alerts are unavailable.** macOS remains on its separate v1.10 build; v1.22 is not a Mac release. The Windows GUI/controller passed Wine checks, but native Windows GPU operation for this build still needs hardware validation.
+
+## Earlier v1.2 Linux demo
 
 [![Watch the Linux v1.2 demo — animated preview](docs/v1.2/linux-demo-preview.gif)](https://github.com/RellikRig/RellikRig-Pearl/raw/refs/heads/main/docs/v1.2/RellikRig-Demo-v12.mp4)
 
 **[Watch or download the full Linux demo (76 seconds)](https://github.com/RellikRig/RellikRig-Pearl/raw/refs/heads/main/docs/v1.2/RellikRig-Demo-v12.mp4)** · [Linux and Windows v1.2 captures](docs/v1.2/README.md)
 
-**Windows and Linux v1.2 are released. NOCK merge mining remains Beta**: auxiliary work can pause while Pearl continues. Mac stays on v1.10 while v1.2 validation continues.
+RellikRig provides Pearl GPU mining for **Windows and Linux**, with a native engine, live dashboards, profitability calculator and measured benchmark history. Optional NOCK merge mining remains Beta; auxiliary work can pause while Pearl continues. Apple silicon Mac is maintained as a separate earlier v1.10 release.
 
-Pearl GPU mining for **Windows and Linux**, with a native engine, live dashboards, profitability calculator and measured benchmark history. This is the **full v1.2 application release**; only optional NOCK merge mining is labeled Beta. Apple silicon Mac remains available as the separate v1.10 release.
-
-[Download v1.2 — Windows/Linux](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.2) · [Mac v1.10](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.10) · [v1.2 screenshots](docs/v1.2/README.md) · [Earlier platform exports](docs/v1.10/README.md) · [Support](SUPPORT.md) · [License](LICENSE.txt)
+[Download current Windows/Linux v1.22](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.22) · [Mac v1.10](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.10) · [Historical v1.2 screenshots](docs/v1.2/README.md) · [Earlier platform exports](docs/v1.10/README.md) · [Support](SUPPORT.md) · [License](LICENSE.txt)
 
 ## Antivirus notice
 
@@ -24,18 +32,18 @@ Pearl GPU mining for **Windows and Linux**, with a native engine, live dashboard
 
 Download only from this repository’s official releases and verify the published SHA-256 checksums. The owner reported no Microsoft Defender alert during the Windows v1.2 test; that is an observation from one machine, not an independent scan certificate. Any published scanner report should identify the exact package hash, scanner/version, definition date, scan time, and result. “No detections in this scan” provides supporting evidence, not a guarantee of safety or future antivirus acceptance.
 
-**[v1.2 scan report — standard scan: no detections; PUA scan: Windows Nuitka packaging flagged](docs/v1.2/scan-20261103/README.md)**
+**[Historical v1.2 scan report — standard scan: no detections; PUA scan: Windows Nuitka packaging flagged](docs/v1.2/scan-20261103/README.md)**
 
 ## Download and first run
 
 | Platform | Package | Open after extracting |
 |---|---|---|
-| Windows x64 / NVIDIA — installer recommended | [Install-RellikRig-Windows-1.2.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.2/Install-RellikRig-Windows-1.2.zip) | `Install-RellikRig-1.2.cmd` |
-| Windows x64 / NVIDIA — portable | [RellikRig-Windows-1.2.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.2/RellikRig-Windows-1.2.zip) | `RellikRig.exe` |
-| Linux x64 / NVIDIA | [RellikRig-Linux-1.2.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.2/RellikRig-Linux-1.2.zip) | `./RellikRig` |
+| Windows x64 / NVIDIA — installer | [Install-RellikRig-Windows-1.22.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/Install-RellikRig-Windows-1.22.zip) | Extract the archive and run the included installer. |
+| Windows x64 / NVIDIA — portable | [RellikRig-Windows-1.22.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/RellikRig-Windows-1.22.zip) | `RellikRig.exe` |
+| Linux x64 / NVIDIA | [RellikRig-Linux-1.22.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/RellikRig-Linux-1.22.zip) | `./RellikRig` |
 | macOS / Apple silicon arm64 — earlier v1.10 | [RellikRig-Mac-1.10.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.10/RellikRig-Mac-1.10.zip) | `RellikRig.app` |
 
-Download the [v1.2 SHA256SUMS.txt](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.2/SHA256SUMS.txt) to verify Windows/Linux downloads; use the [v1.10 checksums](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.10/SHA256SUMS.txt) for the earlier Mac package. The Windows installer verifies the enclosed package, backs up the previous desktop app, preserves external settings and history, and creates the desktop shortcut. Extract the **entire** archive; keep all included files and folders beside the Windows/Linux executable. Python, Rust, Xcode, and the CUDA Toolkit are not required to run the packages. Windows/Linux require an appropriate NVIDIA driver. Mac requires Apple silicon; the published owner measurements are from an M3 Pro with 18 GB unified memory. The Mac app is locally signed and is not Apple Developer ID notarized.
+Download the [v1.22 RELEASE-SHA256SUMS.txt](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/RELEASE-SHA256SUMS.txt) to verify Windows/Linux downloads; use the [v1.10 checksums](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.10/SHA256SUMS.txt) for the earlier Mac package. The Windows installer verifies the enclosed package, backs up the previous desktop app, preserves external settings and history, and creates the desktop shortcut. Extract the **entire** archive; keep all included files and folders beside the Windows/Linux executable. Python, Rust, Xcode, and the CUDA Toolkit are not required to run the packages. Windows/Linux require an appropriate NVIDIA driver. Mac requires Apple silicon; the published owner measurements are from an M3 Pro with 18 GB unified memory. The Mac app is locally signed and is not Apple Developer ID notarized.
 
 1. Open **Settings**, select the engine on Windows/Linux, and review the wallet, worker, pool, and device selection.
 2. **Replace the prefilled publisher PRL address with your own receiving address before mining for yourself.** The prefilled address is intentional; it is not generated for the person downloading the app.
@@ -44,7 +52,7 @@ Download the [v1.2 SHA256SUMS.txt](https://github.com/RellikRig/RellikRig-Pearl/
 
 Changes to engine, wallet, pool, devices, and API port apply on the next Stop → Start. Stop another independently running GPU miner first. RellikRig does not terminate unrelated mining applications.
 
-## What is new in v1.2
+## Historical v1.2 features
 
 - Pearl and **NOCK (Beta)** dashboards with local shared GPU work telemetry, share charts, effort, rolling averages, timestamped read-only terminals, and Stop/Pause/Hide console controls.
 - In-app **Stats, Pool, Pearl Network and NOCK Network** pages using available wallet/pool/network data, with background chart history and explanatory tooltips.
@@ -52,7 +60,7 @@ Changes to engine, wallet, pool, devices, and API port apply on the next Stop �
 - Mining Calculator using available measured/pool/network inputs, saved scenarios, day/week/month projections and electricity defaulting to zero.
 - Benchmark history with named runs, excluded warm-up, measured coverage, four separately bordered chart cards, CSV/JSON exports, and **Pearl plus session-wide confirmed NOCK receipts**. Default observation duration is 30 minutes.
 - Persistent settings, accumulated mining totals and benchmark history outside the installation folder; update backup/install helpers and the Windows desktop installer.
-- Automatic miner recovery and bounded pool connection failover. The primary/backup endpoints use verified TLS on port 3333.
+- Automatic miner recovery and bounded pool connection failover were introduced later in v1.21 and remain available in v1.22. Primary and backup endpoints use verified TLS on port 3333.
 - Secure NOCK receipt API fallback with unchanged certificate validation and exact proof/job/wallet matching. A Pearl ACK alone does not establish NOCK credit.
 
 ### NOCK merge mining — Beta
@@ -68,7 +76,7 @@ Known limitations include intermittent auxiliary pauses, unavailable pool-wide N
 | Native RellikRig NVIDIA engine | Windows, Linux | 0% on `pearl.rellik.dev`; 2% on other compatible pools |
 | Native RellikRig Metal engine | Apple silicon Mac | 0% on `pearl.rellik.dev`; 2% on other compatible pools |
 
-Pool fees are separate. The app shows the applicable fee for the selected engine and pool. This release retains the validated production kernel; no experimental performance candidate or claimed 3% speed increase is included. The Windows/Linux application and controller version is **1.2**. Earlier Mac v1.10 telemetry may retain an older engine label.
+Pool fees are separate. The app shows the applicable fee for the selected engine and pool. This release retains the validated production kernel; no experimental performance candidate or claimed 3% speed increase is included. The current Windows/Linux application and controller version is **1.22**. Earlier Mac v1.10 telemetry may retain an older engine label.
 
 The default connection uses verified TLS. Alternative pools must support the packaged Pearl proof protocol; a pool connection alone does not guarantee compatible share submission. The optional local relay address, connection/latency fallback, and custom difficulty controls are retained on Windows/Linux.
 
@@ -178,7 +186,7 @@ One local API port is shared by the selected engine on Windows/Linux, default `4
 
 Mining traffic goes to the configured pool. Calculator refreshes contact the compatible public pool/network/price feed; update checks/downloads contact GitHub; external links open your browser. Local history/benchmarks are opt-in; there is no separate analytics upload. The default wallet is public and editable. Diagnostic exports redact wallet information; review any diagnostic before sharing it.
 
-If the app cannot launch, extract the whole package again and check OS/architecture. For missing NVIDIA telemetry, test `nvidia-smi`. For occupied API ports, stop another instance or select a free port. For rejected shares, report the selected engine, pool protocol, version, and exact rejection reason; connected does not necessarily mean compatible. Do not run old and new releases together. Updates are user initiated and verify downloaded packages. If an older installation does not offer v1.2, use the Windows installer or a full manual download; preserve your external UserData and benchmark history.
+If the app cannot launch, extract the whole package again and check OS/architecture. For missing NVIDIA telemetry, test `nvidia-smi`. For occupied API ports, stop another instance or select a free port. For rejected shares, report the selected engine, pool protocol, version, and exact rejection reason; connected does not necessarily mean compatible. Do not run old and new releases together. Updates are user initiated and verify downloaded packages. If an older installation does not offer v1.22, use the current Windows installer or a full manual download; preserve your external UserData and benchmark history.
 
 Submit issues with OS, driver, device, selected engine, and error text at [GitHub Issues](https://github.com/RellikRig/RellikRig-Pearl/issues). See [SUPPORT.md](SUPPORT.md) and [SECURITY.md](SECURITY.md).
 
