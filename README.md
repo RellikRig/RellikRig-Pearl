@@ -21,7 +21,11 @@ Clean desktop GUI • Live statistics • Idle-aware mining • System tray cont
 ![Dashboard](docs/Screenshots%20v1.22/Dashboard.png)  
 *Main dashboard — live hashrate, shares, GPU monitoring, and terminal*
 
-**Setup video:** [Watch the full setup & mining demo (~74s)](https://github.com/RellikRig/RellikRig-Pearl/raw/main/docs/Screenshots%20v1.22/RellikSetup.mp4)
+**Setup & mining demo:**
+
+<video src="https://github.com/RellikRig/RellikRig-Pearl/raw/main/docs/Screenshots%20v1.22/RellikSetup.mp4" controls width="100%"></video>
+
+*(If the player doesn’t appear, [download the video](https://github.com/RellikRig/RellikRig-Pearl/raw/main/docs/Screenshots%20v1.22/RellikSetup.mp4))*
 
 ---
 
