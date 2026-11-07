@@ -65,6 +65,19 @@ Always verify the [SHA-256 checksums](https://github.com/RellikRig/RellikRig-Pea
 
 ---
 
+### Tested Hardware
+
+RellikRig has been tested on the following NVIDIA GPUs:
+
+| GPU | VRAM | Observed hashrate |
+|-----|------|-------------------|
+| NVIDIA GeForce RTX 5080 | ~16 GB | ~241 TH/s |
+| NVIDIA H100 SXM | 80 GB | 221.98 TH/s |
+| NVIDIA RTX PRO 4500 Blackwell | 32 GB | 154.96 TH/s |
+| NVIDIA RTX A6000 | 48 GB | 89.13 TH/s |
+
+Other NVIDIA cards may work but have not been fully validated. Results can vary with drivers, power limits, and cooling. Please report your experience if you try a different GPU.
+
 ### Features
 
 - Native RellikRig mining engine (NVIDIA on Windows/Linux)
