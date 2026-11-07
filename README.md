@@ -18,29 +18,10 @@ Clean desktop GUI • Live statistics • Idle-aware mining • System tray cont
 
 ---
 
-### Screenshots (v1.22)
-
-**Main Dashboard**  
 ![Dashboard](docs/Screenshots%20v1.22/Dashboard.png)  
-*Live hashrate, shares, GPU monitoring, and terminal*
+*Main dashboard — live hashrate, shares, GPU monitoring, and terminal*
 
-**Mining Settings**  
-![Mining Settings](docs/Screenshots%20v1.22/Settings1.png)  
-*Wallet, primary/backup pool, and engine configuration*
-
-**NOCK Merge Mining Settings**  
-![NOCK Settings](docs/Screenshots%20v1.22/Settings2.png)  
-*Enable Pearl + NOCK merge mining and set your NOCK wallet*
-
-**NOCK Tab (Active Mining)**  
-![NOCK Mining](docs/Screenshots%20v1.22/Nock.png)  
-*Shared GPU work and confirmed NOCK receipts*
-
-**GPU Info**  
-![GPU Info](docs/Screenshots%20v1.22/GPU.png)
-
-**Mining Calculator**  
-![Mining Calculator](docs/Screenshots%20v1.22/MiningCalculator.png)
+**Setup video:** [Watch the full setup & mining demo (~74s)](https://github.com/RellikRig/RellikRig-Pearl/raw/main/docs/Screenshots%20v1.22/RellikSetup.mp4)
 
 ---
 
@@ -62,6 +43,31 @@ Clean desktop GUI • Live statistics • Idle-aware mining • System tray cont
 Always verify the [SHA-256 checksums](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/RELEASE-SHA256SUMS.txt) after downloading.
 
 **Default pool:** `stratum+ssl://pearl.rellik.dev:3333`
+
+---
+
+<details>
+<summary><strong>More Screenshots (v1.22)</strong></summary>
+
+**Mining Settings**  
+![Mining Settings](docs/Screenshots%20v1.22/Settings1.png)  
+*Wallet, primary/backup pool, and engine configuration*
+
+**NOCK Merge Mining Settings**  
+![NOCK Settings](docs/Screenshots%20v1.22/Settings2.png)  
+*Enable Pearl + NOCK merge mining and set your NOCK wallet*
+
+**NOCK Tab (Active Mining)**  
+![NOCK Mining](docs/Screenshots%20v1.22/Nock.png)  
+*Shared GPU work and confirmed NOCK receipts*
+
+**GPU Info**  
+![GPU Info](docs/Screenshots%20v1.22/GPU.png)
+
+**Mining Calculator**  
+![Mining Calculator](docs/Screenshots%20v1.22/MiningCalculator.png)
+
+</details>
 
 ---
 
