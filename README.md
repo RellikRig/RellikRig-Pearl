@@ -156,6 +156,6 @@ Pearl mining continues running even if NOCK work pauses. Local shared GPU work i
 
 ---
 
-### License
+### Licensing
 
-See [LICENSE.txt](LICENSE.txt)
+See [Licensing](LICENSING.md).
