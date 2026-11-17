@@ -1,11 +1,11 @@
 # RellikRig
 
-**Native Pearl (PRL) GPU miner** for Windows & Linux, with optional **NOCK merge mining** (Beta).
+**Pearl (PRL) GPU miner** for Windows and Linux, with an Apple Silicon preview for macOS and optional **NOCK merge mining** (beta).
 
 Clean desktop GUI • Live statistics • Idle-aware mining • System tray controls  
 **0% developer fee** when mining on the official Rellik pool
 
-[Download Latest Release](https://github.com/RellikRig/RellikRig-Pearl/releases/latest) · [Changelog](CHANGELOG.md) · [Pool Dashboard](https://pearl.rellik.dev)
+[Try v1.23a RC1](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23a-rc1) · [Get v1.22 for Windows or Linux](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.22) · [Changelog](CHANGELOG.md) · [Pool Dashboard](https://pearl.rellik.dev)
 
 ---
 
@@ -18,8 +18,8 @@ Clean desktop GUI • Live statistics • Idle-aware mining • System tray cont
 
 ---
 
-![Dashboard](docs/Screenshots%20v1.22/Dashboard.png)  
-*Main dashboard — live hashrate, shares, GPU monitoring, and terminal*
+![RellikRig v1.23a dashboard showing an RTX 5080 and RTX 2070 mining together](docs/screenshots/v1.23a/dashboard.png)  
+*The v1.23a dashboard shows each card’s speed, shares, temperature, and power.*
 
 **Getting Started (sped up):**
 
@@ -27,7 +27,16 @@ Clean desktop GUI • Live statistics • Idle-aware mining • System tray cont
 
 ---
 
-### Quick Start
+### What’s new in v1.23a RC1
+
+- **Multi-GPU support:** Choose which supported cards mine. Run them together or leave one free for gaming. See stats for each card.
+- **RTX 2070 tuning:** Improved RTX 2070 support. Supported RTX 20-series setups can mine Pearl and NOCK together on Rellik Pool.
+- **Easier to read:** Steadier efficiency readings, improved Mined and Pool Stats views, and separate counts for confirmed NOCK work.
+- **Apple Silicon preview:** Mine Pearl and NOCK together on Rellik Pool. External pools aren’t supported in this build, and the app isn’t Developer ID-signed or notarized.
+
+RC1 is a release candidate. Choose the **Windows portable EXE**, **Linux AppImage**, **Ubuntu 26.04 DEB**, or **macOS Apple Silicon ZIP** from [RC1 downloads](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23a-rc1#assets). The release notes list known issues, checksums, and antivirus scan results. The legacy downloads below are unchanged.
+
+### Quick Start (previous releases)
 
 1. Download the correct package for your platform (see table below)
 2. Extract the full archive
@@ -49,7 +58,21 @@ Always verify the [SHA-256 checksums](https://github.com/RellikRig/RellikRig-Pea
 ---
 
 <details>
-<summary><strong>More Screenshots (v1.22)</strong></summary>
+<summary><strong>More Screenshots (v1.23a)</strong></summary>
+
+**Advanced multi-GPU view**  
+![Expanded RTX 5080 and RTX 2070 cards with separate stats](docs/screenshots/v1.23a/multi-gpu-advanced.png)
+
+**Mined**  
+![Mined page showing share totals and combined GPU telemetry](docs/screenshots/v1.23a/mined.png)
+
+</details>
+
+<details>
+<summary><strong>Previous Screenshots (v1.22)</strong></summary>
+
+**Dashboard**  
+![Dashboard in v1.22](docs/Screenshots%20v1.22/Dashboard.png)
 
 **Mining Settings**  
 ![Mining Settings](docs/Screenshots%20v1.22/Settings1.png)  
@@ -139,7 +162,7 @@ Pearl mining continues running even if NOCK work pauses. Local shared GPU work i
 
 ### Important Notes
 
-- **Replace the prefilled wallet address** before mining for yourself. The address included by default belongs to the project.
+- **Set your own receiving addresses** before you start mining. If an older build has a prefilled wallet, replace it with yours.
 - Cryptocurrency miners are frequently flagged by antivirus software. Only download from this official repository and always verify checksums.
 - Windows and Linux builds require a recent NVIDIA driver.
 - This is closed-source software.
