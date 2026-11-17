@@ -98,16 +98,29 @@ Always verify the [SHA-256 checksums](https://github.com/RellikRig/RellikRig-Pea
 
 ### Tested Hardware
 
-RellikRig has been tested on the following NVIDIA GPUs:
+**v1.23a test results**
 
-| GPU | VRAM | Observed hashrate |
-|-----|------|-------------------|
-| NVIDIA GeForce RTX 5080 | ~16 GB | ~241 TH/s |
+| Hardware | Where it was tested | What we observed |
+|---|---|---|
+| GeForce RTX 5080 (16 GB) | Garuda Linux, alongside the RTX 2070 | About **240–242 TH/s** on Pearl, with accepted shares. |
+| GeForce RTX 2070 (8 GB) | Garuda Linux, alongside the RTX 5080 | About **49 TH/s** on Pearl, with accepted shares. |
+| GeForce RTX 2070 (8 GB) | Ubuntu 26.04.1 LTS, AppImage and DEB | Both packages started mining and recorded accepted Pearl shares. NOCK receipts were not confirmed in those tests. |
+| MacBook Pro (M3 Pro) | Apple Silicon preview | An earlier preview ran for **14 hours** with **266 accepted shares**. The replacement RC1 ZIP passed offline checks, but that live result is from the earlier build. |
+
+The RTX 5080 and RTX 2070 were also tried on Windows 11. See the [RC1 known issues](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23a-rc1#known-issues) for the Windows mining and Stop issues. The rates above are Garuda observations, not Windows or Ubuntu benchmarks.
+
+<details>
+<summary><strong>Earlier NVIDIA benchmarks</strong></summary>
+
+| GPU | VRAM | Observed Pearl hashrate |
+|---|---|---|
 | NVIDIA H100 SXM | 80 GB | 221.98 TH/s |
 | NVIDIA RTX PRO 4500 Blackwell | 32 GB | 154.96 TH/s |
 | NVIDIA RTX A6000 | 48 GB | 89.13 TH/s |
 
-Other NVIDIA cards may work but have not been fully validated. Results can vary with drivers, power limits, and cooling. Please report your experience if you try a different GPU.
+</details>
+
+Results vary with drivers, power limits, and cooling. These tests don’t establish support for every GPU combination or confirm NOCK payouts.
 
 ### Features
 
