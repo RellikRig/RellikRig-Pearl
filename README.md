@@ -18,12 +18,7 @@ Clean desktop GUI • Live statistics • Idle-aware mining • System tray cont
 
 ---
 
-![RellikRig v1.23a dashboard showing an RTX 5080 and RTX 2070 mining together](docs/screenshots/v1.23a/dashboard.png)  
-*The v1.23a dashboard shows each card’s speed, shares, temperature, and power.*
-
-**Getting Started (sped up):**
-
-![Getting Started](docs/Screenshots%20v1.22/GettingStarted.gif)
+**Getting Started:** [Watch the RellikRig 1.23b walkthrough (MP4)](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.23b-rc/RR123b.mp4)
 
 ---
 
@@ -56,43 +51,6 @@ Always verify the [SHA-256 checksums](https://github.com/RellikRig/RellikRig-Pea
 **Default pool:** `stratum+ssl://pearl.rellik.dev:3333`
 
 ---
-
-<details>
-<summary><strong>More Screenshots (v1.23a)</strong></summary>
-
-**Advanced multi-GPU view**  
-![Expanded RTX 5080 and RTX 2070 cards with separate stats](docs/screenshots/v1.23a/multi-gpu-advanced.png)
-
-**Mined**  
-![Mined page showing share totals and combined GPU telemetry](docs/screenshots/v1.23a/mined.png)
-
-</details>
-
-<details>
-<summary><strong>Previous Screenshots (v1.22)</strong></summary>
-
-**Dashboard**  
-![Dashboard in v1.22](docs/Screenshots%20v1.22/Dashboard.png)
-
-**Mining Settings**  
-![Mining Settings](docs/Screenshots%20v1.22/Settings1.png)  
-*Wallet, primary/backup pool, and engine configuration*
-
-**NOCK Merge Mining Settings**  
-![NOCK Settings](docs/Screenshots%20v1.22/Settings2.png)  
-*Enable Pearl + NOCK merge mining and set your NOCK wallet*
-
-**NOCK Tab (Active Mining)**  
-![NOCK Mining](docs/Screenshots%20v1.22/Nock.png)  
-*Shared GPU work and confirmed NOCK receipts*
-
-**GPU Info**  
-![GPU Info](docs/Screenshots%20v1.22/GPU.png)
-
-**Mining Calculator**  
-![Mining Calculator](docs/Screenshots%20v1.22/MiningCalculator.png)
-
-</details>
 
 ---
 
