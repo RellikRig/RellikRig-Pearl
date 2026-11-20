@@ -5,7 +5,7 @@
 Clean desktop GUI • Live statistics • Idle-aware mining • System tray controls  
 **0% developer fee** when mining on the official Rellik pool
 
-[Try v1.23a RC1](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23a-rc1) · [Get v1.22 for Windows or Linux](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.22) · [Changelog](CHANGELOG.md) · [Pool Dashboard](https://pearl.rellik.dev)
+[Download v1.23b](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23b-rc) · [Changelog](CHANGELOG.md) · [Pool Dashboard](https://pearl.rellik.dev)
 
 ---
 
@@ -18,54 +18,44 @@ Clean desktop GUI • Live statistics • Idle-aware mining • System tray cont
 
 ---
 
-**Getting Started:** [Watch the RellikRig 1.23b walkthrough (MP4)](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.23b-rc/RR123b.mp4)
+![RellikRig 1.23b dashboard walkthrough](RR123b.gif)
+
+[Download the walkthrough (MP4)](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.23b-rc/RR123b.mp4)
 
 ---
 
-### What’s new in v1.23a RC1
+### What’s new in v1.23b
 
-- **Multi-GPU support:** Choose which supported cards mine. Run them together or leave one free for gaming. See stats for each card.
-- **RTX 2070 tuning:** Improved RTX 2070 support. Supported RTX 20-series setups can mine Pearl and NOCK together on Rellik Pool.
-- **Easier to read:** Steadier efficiency readings, improved Mined and Pool Stats views, and separate counts for confirmed NOCK work.
-- **Apple Silicon preview:** Mine Pearl and NOCK together on Rellik Pool. External pools aren’t supported in this build, and the app isn’t Developer ID-signed or notarized.
+- **Per-GPU tuning:** Updated mining profiles tested on the RTX 2070, RTX 3070, and RTX 5080.
+- **Cleaner multi-GPU dashboard:** Scroll through your GPU cards with the terminal open. Choose which cards mine and leave one free for gaming.
+- **Easier setup:** Grouped settings and a first-run reminder to enter your own payout address.
+- **Clearer Pearl and NOCK stats:** See which jobs each GPU is working on and which NOCK shares the pool confirmed. NOCK merge mining remains in beta.
 
-RC1 is a release candidate. Choose the **Windows portable EXE**, **Linux AppImage**, **Ubuntu 26.04 DEB**, or **macOS Apple Silicon ZIP** from [RC1 downloads](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23a-rc1#assets). The release notes list known issues, checksums, and antivirus scan results. The legacy downloads below are unchanged.
+### Download and quick start
 
-### Quick Start (previous releases)
+| Platform | Download | How to run |
+|---|---|---|
+| Windows x64 | [Portable EXE](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.23b-rc/RellikRig-Windows-1.23b-RC.exe) | Run the EXE. |
+| Linux x86-64 (including Arch-based Garuda) | [AppImage](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.23b-rc/RellikRig-1.23b-x86_64.AppImage) | Make it executable and open it. |
+| Ubuntu amd64 | [DEB package](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.23b-rc/rellikrig_1.23b_amd64.deb) | Install the package, then open RellikRig. |
+| macOS (Apple Silicon) | [Earlier v1.23a RC1 preview](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23a-rc1#assets) | No new macOS build in v1.23b. |
 
-1. Download the correct package for your platform (see table below)
-2. Extract the full archive
-3. Open **Settings** and **replace the prefilled wallet** with your own PRL receiving address
-4. (Optional) Enable NOCK merge mining and enter your NOCK wallet
-5. Click **Start miner**
-
-| Platform                    | Package                                                                 | How to run              |
-|----------------------------|--------------------------------------------------------------------------|-------------------------|
-| Windows (Installer)        | [Install-RellikRig-Windows-1.22.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/Install-RellikRig-Windows-1.22.zip) | Run the installer       |
-| Windows (Portable)         | [RellikRig-Windows-1.22.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/RellikRig-Windows-1.22.zip) | `RellikRig.exe`         |
-| Linux                      | [RellikRig-Linux-1.22.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/RellikRig-Linux-1.22.zip) | `./RellikRig`           |
-| macOS (Apple Silicon)      | [RellikRig-Mac-1.10.zip](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.10/RellikRig-Mac-1.10.zip) | `RellikRig.app` (v1.10) |
-
-Always verify the [SHA-256 checksums](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.22/RELEASE-SHA256SUMS.txt) after downloading.
+1. Download your package and verify it against the matching release’s checksums: [v1.23b SHA256SUMS](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.23b-rc/SHA256SUMS) or [earlier release assets](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23a-rc1#assets).
+2. Open RellikRig and enter your own Pearl payout address.
+3. Optionally enable NOCK merge mining and enter your NOCK payout address.
+4. Select the GPUs you want to use and click **Start miner**.
 
 **Default pool:** `stratum+ssl://pearl.rellik.dev:3333`
 
----
+[Full v1.23b release notes](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23b-rc) · [Older releases](https://github.com/RellikRig/RellikRig-Pearl/releases)
 
 ---
 
-### Tested Hardware
+### Testing
 
-**v1.23a test results**
-
-| Hardware | Where it was tested | What we observed |
-|---|---|---|
-| GeForce RTX 5080 (16 GB) | Garuda Linux, alongside the RTX 2070 | About **240–242 TH/s** on Pearl, with accepted shares. |
-| GeForce RTX 2070 (8 GB) | Garuda Linux, alongside the RTX 5080 | About **49 TH/s** on Pearl, with accepted shares. |
-| GeForce RTX 2070 (8 GB) | Ubuntu 26.04.1 LTS, AppImage and DEB | Both packages started mining and recorded accepted Pearl shares. NOCK receipts were not confirmed in those tests. |
-| MacBook Pro (M3 Pro) | Apple Silicon preview | An earlier preview ran for **14 hours** with **266 accepted shares**. The replacement RC1 ZIP passed offline checks, but that live result is from the earlier build. |
-
-The RTX 5080 and RTX 2070 were also tried on Windows 11. See the [RC1 known issues](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23a-rc1#known-issues) for the Windows mining and Stop issues. The rates above are Garuda observations, not Windows or Ubuntu benchmarks.
+- **Garuda Linux (Arch-based):** The v1.23b AppImage was tested on Garuda.
+- **Ubuntu 24.04:** The AppImage and DEB passed startup checks in a container. Live Ubuntu hardware mining is not yet verified for v1.23b.
+- **Windows:** The RTX 3070 and RTX 5080 workers started. The RTX 2070 passed offline proof and local submission checks; live Windows mining on the 2070 is not yet verified for this build.
 
 <details>
 <summary><strong>Earlier NVIDIA benchmarks</strong></summary>
