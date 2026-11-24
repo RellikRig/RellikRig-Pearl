@@ -1,3 +1,17 @@
+🚀🔥 **RellikRig v1.3 Beta for Linux**
+
+⛏️ Multi-pool mining per GPU, multi-GPU detection, live Auto Tune, and performance benchmarks are now in the Linux beta.
+
+⚡ Auto Tune compares Fastest, Balanced, and Efficient profiles across supported RTX 20, 30, 40, and 50 series GPUs.
+
+📊 Benchmark profiles with live readings and saved performance history.
+
+💻 Download the [Linux 1.3 beta](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.3-beta). The AppImage supports Linux x86-64, including Arch and Debian-based distributions. A Debian package is available for Debian-based systems.
+
+🧪 Beta software can expose GPU driver instability. Save a working profile before tuning.
+
+---
+
 # RellikRig
 
 **Pearl (PRL) GPU miner** for Windows and Linux, with an Apple Silicon preview for macOS and optional **NOCK merge mining** (beta).
