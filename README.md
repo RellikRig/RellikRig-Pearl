@@ -2,12 +2,12 @@
 
 **Pearl (PRL) GPU mining with a desktop interface built for everyday PCs and multi-GPU rigs.** Choose which cards mine, see how each one is doing, and use idle-aware mining to make room for gaming and normal PC use.
 
-**v1.3 beta for Linux** adds per-GPU pools and **Live Auto Tune**. Earlier Windows releases and the Apple Silicon preview remain available below. Optional **NOCK merge mining** is still in beta.
+**v1.4 beta for Linux** adds per-GPU pools and **Live Auto Tune**. Earlier Windows releases and the Apple Silicon preview remain available below. Optional **NOCK merge mining** is still in beta.
 
 Multi-GPU support • Live Auto Tune • Per-card pools and stats • Idle-aware mining • System tray controls  
 **0% developer fee** when mining on the official Rellik Pool
 
-[Download v1.3 beta for Linux](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.3-beta) · [Earlier Windows/Linux release](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23b-rc) · [Changelog](CHANGELOG.md) · [Pool Dashboard](https://pearl.rellik.dev)
+[Download v1.4 beta for Linux](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.4-beta) · [Earlier Windows/Linux release](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23b-rc) · [Changelog](CHANGELOG.md) · [Pool Dashboard](https://pearl.rellik.dev)
 
 ---
 
@@ -30,7 +30,7 @@ Multi-GPU support • Live Auto Tune • Per-card pools and stats • Idle-aware
 
 ---
 
-### What’s new in v1.3 beta
+### What’s new in v1.4 beta
 
 #### Multi-GPU Support — your cards, your choice
 
@@ -74,14 +74,14 @@ Grouped settings, the first-run wallet reminder, diagnostics ZIPs, basic charts,
 
 ### Download and quick start
 
-**Current Linux release — v1.3 beta**
+**Current Linux release — v1.4 beta**
 
 | Platform | Download | How to run |
 |---|---|---|
-| Linux x86-64, including Arch and Debian-based distributions | [v1.3 beta AppImage](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.3-beta/RellikRig-1.3-beta-x86_64.AppImage) | Make it executable, then open it. |
-| Ubuntu / Debian amd64 | [v1.3 beta DEB package](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.3-beta/rellikrig_1.3-beta_amd64.deb) | Install the package, then open RellikRig. |
+| Linux x86-64, including Arch and Debian-based distributions | [v1.4 beta AppImage](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.4-beta/RellikRig-1.4-beta-x86_64.AppImage) | Make it executable, then open it. |
+| Ubuntu / Debian amd64 | [v1.4 beta DEB package](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.4-beta/rellikrig_1.4-beta_amd64.deb) | Install the package, then open RellikRig. |
 
-1. Download the package for your system and verify it against the [v1.3 beta SHA256SUMS](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.3-beta/SHA256SUMS).
+1. Download the package for your system and verify it against the [v1.4 beta SHA256SUMS](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.4-beta/SHA256SUMS).
 2. Open **Settings → Pool** and enter your own Pearl receiving address. Review any settings kept from an earlier installation.
 3. Use a shared pool for all cards, or turn off **Use one pool for all GPUs** and set each card’s pool. Empty per-card pool fields use the shared primary pool.
 4. Select the GPUs you want to use. Optionally enable Pearl + NOCK and enter your own NOCK receiving address.
@@ -91,7 +91,7 @@ Grouped settings, the first-run wallet reminder, diagnostics ZIPs, basic charts,
 
 **Default pool:** `stratum+ssl://pearl.rellik.dev:3333`
 
-[Full v1.3 beta release notes](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.3-beta) · [All releases](https://github.com/RellikRig/RellikRig-Pearl/releases)
+[Full v1.4 beta release notes](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.4-beta) · [All releases](https://github.com/RellikRig/RellikRig-Pearl/releases)
 
 <details>
 <summary><strong>Earlier Windows, Linux, and macOS downloads</strong></summary>
@@ -113,7 +113,7 @@ Use the checksum list for the exact release: [v1.23b SHA256SUMS](https://github.
 
 ### Hardware and testing
 
-The v1.3 beta release describes Linux Auto Tune support for **GeForce RTX 20, 30, 40, and 50 series**. Available tuning controls depend on the individual GPU and driver.
+The v1.4 beta release describes Linux Auto Tune support for **GeForce RTX 20, 30, 40, and 50 series**. Available tuning controls depend on the individual GPU and driver.
 
 The supplied interface previews show an **RTX 5080 and two RTX 3070s** with independent controls and pool assignments. Earlier per-card mining profile work was tested on the **RTX 2070, RTX 3070, and RTX 5080**. These observations do not establish that every model or combination has been tested, or that every card has completed a long Auto Tune run.
 
@@ -121,7 +121,7 @@ The supplied interface previews show an **RTX 5080 and two RTX 3070s** with inde
 <summary><strong>Earlier v1.23b testing</strong></summary>
 
 - **Garuda Linux:** The v1.23b AppImage was tested on Garuda.
-- **Ubuntu 24.04:** The v1.23b AppImage and DEB passed container startup checks. Those checks do not establish live GPU mining on Ubuntu or test the newer v1.3 packages.
+- **Ubuntu 24.04:** The v1.23b AppImage and DEB passed container startup checks. Those checks do not establish live GPU mining on Ubuntu or test the newer v1.4 packages.
 - **Windows:** In v1.23b, RTX 3070 and RTX 5080 workers started. The RTX 2070 passed offline proof and local submission checks; live Windows mining on that card was not verified for that build.
 
 </details>
@@ -135,7 +135,7 @@ The supplied interface previews show an **RTX 5080 and two RTX 3070s** with inde
 | NVIDIA RTX PRO 4500 Blackwell | 32 GB | 154.96 TH/s |
 | NVIDIA RTX A6000 | 48 GB | 89.13 TH/s |
 
-These historical results are not v1.3 Auto Tune benchmarks.
+These historical results are not v1.4 Auto Tune benchmarks.
 
 </details>
 
@@ -145,7 +145,7 @@ Results vary with drivers, power limits, cooling, and workload. A saved profile 
 
 - Native RellikRig mining engine for NVIDIA GPUs on Windows/Linux, with version-specific platform support
 - Independent GPU selection, per-card stats, and remembered settings
-- Per-GPU pool choices and Live Auto Tune in the Linux v1.3 beta
+- Per-GPU pool choices and Live Auto Tune in the Linux v1.4 beta
 - Live dashboard, smoothed efficiency readings, and an expandable console
 - Primary and backup pool settings
 - Idle-aware mining, pause/resume, and system tray controls
@@ -195,7 +195,7 @@ The dashboard shows which GPUs have NOCK jobs. Local shared work may be shown in
 
 ### Important Notes
 
-- **v1.3 is a Linux beta.** No new Windows or macOS v1.3 package is listed in this release.
+- **v1.4 is a Linux beta.** No new Windows or macOS v1.4 package is listed in this release.
 - **Auto Tune changes GPU clocks.** Stability checks can catch failed settings, but some driver failures still need a reboot. Recovery is not guaranteed.
 - **Use your own receiving addresses.** Review saved wallet and pool settings before starting.
 - **Use a recent NVIDIA driver** and the tuning controls supported by your card.
