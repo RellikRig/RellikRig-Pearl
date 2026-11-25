@@ -22,11 +22,11 @@ Multi-GPU support • Live Auto Tune • Per-card pools and stats • Idle-aware
 
 ### See RellikRig in action
 
-![RellikRig test-build walkthrough showing GPU tuning profiles, per-card pools, and the multi-GPU interface](docs/media/RellikRig-v1.3-beta.gif)
+![RellikRig dashboard showing Pearl and NOCK session stats for an RTX 5080 and two RTX 3070 GPUs](docs/media/Multipooldashboard.jpg)
 
-*GPU tuning and Multi-GPU walkthrough from a test build labeled “v1.24-autotune beta.” It shows saved tuning results and the updated controls; the Linux release is named v1.3 beta. Wallet and account details are hidden.*
+![RellikRig per-GPU pool settings](docs/media/Multipool.jpg)
 
-[Watch the walkthrough as an MP4](docs/media/RellikRig-v1.3-beta.mp4)
+![RellikRig GPU tuning settings with saved Fastest, Balanced, and Efficient profiles](docs/media/Autotune5080.jpg)
 
 ---
 
@@ -53,6 +53,8 @@ Try supported graphics and memory clock settings **while the selected GPU is min
 | **Efficient** | The best measured work per unit of energy among the tested settings. |
 
 Auto Tune uses the settings available for that card and checks candidates for stability before saving them. Profiles belong to the GPU they were tested on. **Linux Auto Tune supports GeForce RTX 20, 30, 40, and 50 series**, subject to the controls available through your card and driver.
+
+**Changing GPU overclock settings requires administrator rights.**
 
 **Mining-only tuning:** During normal Pause or Stop, RellikRig clears its own clock overrides so your existing GPU settings can take over again. The Linux options to suspend LACT affect **all GPUs**, as labeled in Settings. Driver failures can still require manual recovery.
 
