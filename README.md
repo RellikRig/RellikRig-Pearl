@@ -2,12 +2,12 @@
 
 **Pearl (PRL) GPU mining with a desktop interface built for everyday PCs and multi-GPU rigs.** Choose which cards mine, see how each one is doing, and use idle-aware mining to make room for gaming and normal PC use.
 
-**v1.4 beta for Linux** adds per-GPU pools and **Live Auto Tune**. Earlier Windows releases and the Apple Silicon preview remain available below. Optional **NOCK merge mining** is still in beta.
+**v1.41 Beta for Linux** includes per-GPU pools and **Live Auto Tune**. Earlier Windows releases and the Apple Silicon preview remain available below. Optional **NOCK merge mining** is still in beta.
 
 Multi-GPU support • Live Auto Tune • Per-card pools and stats • Idle-aware mining • System tray controls  
 **0% developer fee** when mining on the official Rellik Pool
 
-[Download v1.4 beta for Linux](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.4-beta) · [Earlier Windows/Linux release](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23b-rc) · [Changelog](CHANGELOG.md) · [Pool Dashboard](https://pearl.rellik.dev)
+[Download v1.41 Beta for Linux](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.41) · [Earlier Windows/Linux release](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23b-rc) · [Changelog](CHANGELOG.md) · [Pool Dashboard](https://pearl.rellik.dev)
 
 ---
 
@@ -90,14 +90,14 @@ Grouped settings, the first-run wallet reminder, diagnostics ZIPs, basic charts,
 
 ### Download and quick start
 
-**Current Linux release — v1.4 beta**
+**Current Linux release — v1.41 Beta**
 
 | Platform | Download | How to run |
 |---|---|---|
-| Linux x86-64, including Arch and Debian-based distributions | [v1.4 beta AppImage](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.4-beta/RellikRig-1.4-beta-x86_64.AppImage) | Make it executable, then open it. |
-| Ubuntu / Debian amd64 | [v1.4 beta DEB package](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.4-beta/rellikrig_1.4-beta_amd64.deb) | Install the package, then open RellikRig. |
+| Linux x86-64, including Arch and Debian-based distributions | [v1.41 Beta AppImage](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.41/RellikRig-1.41-x86_64.AppImage) | Make it executable, then open it. |
+| Ubuntu / Debian amd64 | [v1.41 Beta DEB package](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.41/rellikrig_1.41_amd64.deb) | Install the package, then open RellikRig. |
 
-1. Download the package for your system and verify it against the [v1.4 beta SHA256SUMS](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.4-beta/SHA256SUMS).
+1. Download the package for your system and verify it against the [v1.41 SHA256SUMS](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.41/SHA256SUMS).
 2. Open **Settings → Pool** and enter your own Pearl receiving address. Review any settings kept from an earlier installation.
 3. Use a shared pool for all cards, or turn off **Use one pool for all GPUs** and set each card’s pool. Empty per-card pool fields use the shared primary pool.
 4. Select the GPUs you want to use. Optionally enable Pearl + NOCK and enter your own NOCK receiving address.
@@ -107,7 +107,7 @@ Grouped settings, the first-run wallet reminder, diagnostics ZIPs, basic charts,
 
 **Default pool:** `stratum+ssl://pearl.rellik.dev:3333`
 
-[Full v1.4 beta release notes](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.4-beta) · [All releases](https://github.com/RellikRig/RellikRig-Pearl/releases)
+[Full v1.41 Beta release notes](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.41) · [All releases](https://github.com/RellikRig/RellikRig-Pearl/releases)
 
 <details>
 <summary><strong>Earlier Windows, Linux, and macOS downloads</strong></summary>
@@ -211,7 +211,7 @@ The dashboard shows which GPUs have NOCK jobs. Local shared work may be shown in
 
 ### Important Notes
 
-- **v1.4 is a Linux beta.** No new Windows or macOS v1.4 package is listed in this release.
+- **v1.41 Beta is a Linux release.** No new Windows or macOS package is included in this release.
 - **Auto Tune changes GPU clocks.** Stability checks can catch failed settings, but some driver failures still need a reboot. Recovery is not guaranteed.
 - **Use your own receiving addresses.** Review saved wallet and pool settings before starting.
 - **Use a recent NVIDIA driver** and the tuning controls supported by your card.
