@@ -10,7 +10,7 @@
 
 ## Connection fix
 
-- Try the US Kryptex endpoint with verified TLS when the standard developer-fee endpoint cannot be reached, preserving the developer account and fee accounting.
+- Improved recovery from pool connection failures.
 
 ---
 
