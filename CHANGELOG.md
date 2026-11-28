@@ -1,4 +1,4 @@
-# v1.41 Beta — Linux (upcoming)
+# v1.41 Beta — Linux
 
 ## AutoTune fixes
 
