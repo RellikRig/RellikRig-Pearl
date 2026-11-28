@@ -64,9 +64,9 @@ Auto Tune uses the settings available for that card and checks candidates for st
 - **Live measurements and saved history:** Review results later when choosing a profile.
 - **Keep interrupted results:** Measurements are preserved if a benchmark ends before it finishes.
 
-#### RTX 5080 Windows benchmark results
+#### 30-minute benchmark results
 
-These results are from three completed 30-minute stability benchmarks on one NVIDIA GeForce RTX 5080 using the Windows v1.41 Beta test build. Values are measured averages.
+These results are from three completed 30-minute stability benchmarks on one NVIDIA GeForce RTX 5080 using RellikRig v1.41 Beta. Values are measured averages.
 
 | Auto Tune profile | Pearl hashrate | Board power | Efficiency | GPU temperature |
 |---|---:|---:|---:|---:|
@@ -74,7 +74,11 @@ These results are from three completed 30-minute stability benchmarks on one NVI
 | Balanced | 241.10 TH/s | 305.98 W | 787.97 GH/W | 67.35 °C |
 | Efficient | 232.32 TH/s | 270.00 W | 860.46 GH/W | 64.27 °C |
 
-Results vary with the GPU, drivers, cooling, power limits, and workload. These Windows test results do not indicate that a Windows v1.41 package has been released.
+Results vary with the GPU, drivers, cooling, power limits, and workload.
+
+![30-minute benchmark results showing Fastest and Balanced profiles](docs/media/benchmark-30-minute-results.png)
+
+![30-minute benchmark results and performance history](docs/media/benchmark-30-minute-history.png)
 
 #### Better recovery when a run hits trouble
 
