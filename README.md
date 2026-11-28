@@ -2,12 +2,12 @@
 
 **Pearl (PRL) GPU mining with a desktop interface built for everyday PCs and multi-GPU rigs.** Choose which cards mine, see how each one is doing, and use idle-aware mining to make room for gaming and normal PC use.
 
-**v1.41 Beta for Linux** includes per-GPU pools and **Live Auto Tune**. Earlier Windows releases and the Apple Silicon preview remain available below. Optional **NOCK merge mining** is still in beta.
+**v1.41 Beta for Windows and Linux** includes GPU tuning and mining controls. Hardware testing varies by platform and GPU; see the results below. The earlier Apple Silicon preview remains available. Optional **NOCK merge mining** is still in beta.
 
 Multi-GPU support • Live Auto Tune • Per-card pools and stats • Idle-aware mining • System tray controls  
 **0% developer fee** when mining on the official Rellik Pool
 
-[Download v1.41 Beta for Linux](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.41) · [Earlier Windows/Linux release](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23b-rc) · [Changelog](CHANGELOG.md) · [Pool Dashboard](https://pearl.rellik.dev)
+[Download v1.41 Beta for Windows and Linux](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.41) · [Earlier Windows/Linux release](https://github.com/RellikRig/RellikRig-Pearl/releases/tag/v1.23b-rc) · [Changelog](CHANGELOG.md) · [Pool Dashboard](https://pearl.rellik.dev)
 
 ---
 
@@ -54,7 +54,7 @@ Try supported graphics and memory clock settings **while the selected GPU is min
 
 Auto Tune uses the settings available for that card and checks candidates for stability before saving them. Profiles belong to the GPU they were tested on. **Linux Auto Tune supports GeForce RTX 20, 30, 40, and 50 series**, subject to the controls available through your card and driver.
 
-**Changing GPU overclock settings requires administrator rights.**
+**Changing GPU overclock settings requires administrator rights.** On Windows, approve setup of the tuning service from GPU Tuning in Settings. On Linux, the separate helper setup provides unattended tuning after one administrator approval.
 
 **Mining-only tuning:** During normal Pause or Stop, RellikRig clears its own clock overrides so your existing GPU settings can take over again. The Linux options to suspend LACT affect **all GPUs**, as labeled in Settings. Driver failures can still require manual recovery.
 
@@ -76,7 +76,7 @@ Auto Tune uses the settings available for that card and checks candidates for st
 
 #### 30-minute benchmark results
 
-These results are from three completed 30-minute stability benchmarks on one NVIDIA GeForce RTX 5080 using RellikRig v1.41 Beta. Values are measured averages.
+These results are from three completed 30-minute stability benchmarks on one NVIDIA GeForce RTX 5080 using a Windows v1.41 Beta test build. Values are measured averages. The distributed executable contains the same tested mining and tuning components; later outer interface changes were tested separately.
 
 | Auto Tune profile | Pearl hashrate | Board power | Efficiency | GPU temperature |
 |---|---:|---:|---:|---:|
@@ -100,14 +100,15 @@ Grouped settings, the first-run wallet reminder, diagnostics ZIPs, basic charts,
 
 ### Download and quick start
 
-**Current Linux release — v1.41 Beta**
+**Current release — v1.41 Beta**
 
 | Platform | Download | How to run |
 |---|---|---|
+| Windows x64 | [v1.41 Beta EXE](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.41/RellikRig-1.41-Windows-x64.exe) | Download and open the unsigned beta executable. |
 | Linux x86-64, including Arch and Debian-based distributions | [v1.41 Beta AppImage](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.41/RellikRig-1.41-x86_64.AppImage) | Make it executable, then open it. |
 | Ubuntu / Debian amd64 | [v1.41 Beta DEB package](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.41/rellikrig_1.41_amd64.deb) | Install the package, then open RellikRig. |
 
-1. Download the package for your system and verify it against the [v1.41 SHA256SUMS](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.41/SHA256SUMS).
+1. Download the package for your system and verify it against the [Windows checksum](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.41/SHA256SUMS-WINDOWS.txt) or [Linux checksums](https://github.com/RellikRig/RellikRig-Pearl/releases/download/v1.41/SHA256SUMS).
 2. Open **Settings → Pool** and enter your own Pearl receiving address. Review any settings kept from an earlier installation.
 3. Use a shared pool for all cards, or turn off **Use one pool for all GPUs** and set each card’s pool. Empty per-card pool fields use the shared primary pool.
 4. Select the GPUs you want to use. Optionally enable Pearl + NOCK and enter your own NOCK receiving address.
@@ -122,7 +123,7 @@ Grouped settings, the first-run wallet reminder, diagnostics ZIPs, basic charts,
 <details>
 <summary><strong>Earlier Windows, Linux, and macOS downloads</strong></summary>
 
-These are separate releases. The new Linux Auto Tune features do not imply equivalent Windows or macOS support.
+These are earlier, separate releases. Windows, Linux, and macOS support differs by version and hardware.
 
 | Platform | Earlier download | Version |
 |---|---|---|
@@ -140,6 +141,8 @@ Use the checksum list for the exact release: [v1.23b SHA256SUMS](https://github.
 ### Hardware and testing
 
 The v1.4 beta release describes Linux Auto Tune support for **GeForce RTX 20, 30, 40, and 50 series**. Available tuning controls depend on the individual GPU and driver.
+
+Windows RTX 5080 testing included a 30-minute Fastest run with 115 pool-confirmed NOCK receipts and a separate 30-minute Balanced run. Windows physical qualification of the RTX 3070 and RTX 2070 remains pending.
 
 The supplied interface previews show an **RTX 5080 and two RTX 3070s** with independent controls and pool assignments. Earlier per-card mining profile work was tested on the **RTX 2070, RTX 3070, and RTX 5080**. These observations do not establish that every model or combination has been tested, or that every card has completed a long Auto Tune run.
 
@@ -221,7 +224,7 @@ The dashboard shows which GPUs have NOCK jobs. Local shared work may be shown in
 
 ### Important Notes
 
-- **v1.41 Beta is a Linux release.** No new Windows or macOS package is included in this release.
+- **v1.41 Beta includes Windows and Linux downloads.** The Windows executable is unsigned; no new macOS package is included.
 - **Auto Tune changes GPU clocks.** Stability checks can catch failed settings, but some driver failures still need a reboot. Recovery is not guaranteed.
 - **Use your own receiving addresses.** Review saved wallet and pool settings before starting.
 - **Use a recent NVIDIA driver** and the tuning controls supported by your card.
