@@ -64,6 +64,16 @@ Auto Tune uses the settings available for that card and checks candidates for st
 - **Live measurements and saved history:** Review results later when choosing a profile.
 - **Keep interrupted results:** Measurements are preserved if a benchmark ends before it finishes.
 
+#### Live profile examples
+
+**Fastest**
+
+![RellikRig dashboard mining with the Fastest profile](docs/media/profile-fastest-5080.png)
+
+**Efficient**
+
+![RellikRig dashboard mining with the Efficient profile](docs/media/profile-efficient-5080.png)
+
 #### 30-minute benchmark results
 
 These results are from three completed 30-minute stability benchmarks on one NVIDIA GeForce RTX 5080 using RellikRig v1.41 Beta. Values are measured averages.
