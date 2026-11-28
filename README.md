@@ -2,7 +2,7 @@
 
 **Pearl (PRL) GPU mining with a desktop interface built for everyday PCs and multi-GPU rigs.** Choose which cards mine, see how each one is doing, and use idle-aware mining to make room for gaming and normal PC use.
 
-**v1.41 Beta for Windows and Linux** includes GPU tuning and mining controls. Hardware testing varies by platform and GPU; see the results below. The earlier Apple Silicon preview remains available. Optional **NOCK merge mining** is still in beta.
+**v1.41 Beta for Windows and Linux** includes per-GPU pools, mining controls, and Live Auto Tune. This is the first public Windows release with Auto Tune. Hardware testing varies by platform and GPU; see the results below. The earlier Apple Silicon preview remains available. Optional **NOCK merge mining** is still in beta.
 
 Multi-GPU support • Live Auto Tune • Per-card pools and stats • Idle-aware mining • System tray controls  
 **0% developer fee** when mining on the official Rellik Pool
@@ -52,11 +52,11 @@ Try supported graphics and memory clock settings **while the selected GPU is min
 | **Balanced** | A balance between mining speed and power use. |
 | **Efficient** | The best measured work per unit of energy among the tested settings. |
 
-Auto Tune uses the settings available for that card and checks candidates for stability before saving them. Profiles belong to the GPU they were tested on. **Linux Auto Tune supports GeForce RTX 20, 30, 40, and 50 series**, subject to the controls available through your card and driver.
+Auto Tune uses the settings available for each card, screens candidates with 10-second readings, and verifies finalists with 60-second readings. The selected profile is monitored during a saved 30-minute stability benchmark. Profiles belong to the GPU they were tested on. The tuner supports GeForce RTX 20, 30, 40, and 50 series subject to card and driver controls; physical Windows qualification of the RTX 3070 and RTX 2070 remains pending. You can tune eligible GPUs one at a time in a queue and choose which profile to apply afterward.
 
 **Changing GPU overclock settings requires administrator rights.** On Windows, approve setup of the tuning service from GPU Tuning in Settings. On Linux, the separate helper setup provides unattended tuning after one administrator approval.
 
-**Mining-only tuning:** During normal Pause or Stop, RellikRig clears its own clock overrides so your existing GPU settings can take over again. The Linux options to suspend LACT affect **all GPUs**, as labeled in Settings. Driver failures can still require manual recovery.
+**Mining-only tuning:** During normal Pause or Stop, RellikRig clears its own clock overrides so your existing GPU settings can take over again. On Windows, RellikRig hands control back to MSI Afterburner when the tuning session ends. The Linux options to suspend LACT affect **all GPUs**, as labeled in Settings. Driver failures can still require manual recovery.
 
 #### Benchmarks you can compare later
 
@@ -174,7 +174,7 @@ Results vary with drivers, power limits, cooling, and workload. A saved profile 
 
 - Native RellikRig mining engine for NVIDIA GPUs on Windows/Linux, with version-specific platform support
 - Independent GPU selection, per-card stats, and remembered settings
-- Per-GPU pool choices and Live Auto Tune in the Linux v1.4 beta
+- Per-GPU pool choices and Live Auto Tune in v1.41 Beta, with hardware testing varying by platform
 - Live dashboard, smoothed efficiency readings, and an expandable console
 - Primary and backup pool settings
 - Idle-aware mining, pause/resume, and system tray controls
