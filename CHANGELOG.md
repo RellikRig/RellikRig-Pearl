@@ -1,3 +1,19 @@
+# v1.41 Beta — Linux (upcoming)
+
+## AutoTune fixes
+
+- Improved Fastest, Balanced, and Efficient profile selection to retain distinct winners when suitable candidates are available.
+- Discover clock and memory combinations at each GPU's reported maximum power, then test lower power limits for efficiency.
+- Screen settings with 10-second readings and verify finalists with 60-second readings before saving profiles.
+- Monitor the selected profile during a 30-minute mining stability test and save the benchmark result for later review.
+- Keep tuning progress for resumption, and limit confirmed instability exclusions to the affected combination of settings. A confirmed CUDA or driver failure or a non-stale rejected share can trigger recovery to a known good profile when available.
+
+## Connection fix
+
+- Try the US Kryptex endpoint with verified TLS when the standard developer-fee endpoint cannot be reached, preserving the developer account and fee accounting.
+
+---
+
 # 1.10 — 2026-10-27
 
 ## 1.2 — 2026-11-03 — Windows/Linux; NOCK Beta
